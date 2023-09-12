@@ -8,23 +8,22 @@ import {
   DarkMode,
 } from "@mui/icons-material";
 import Icon from "./Icon";
+import Li from "./headerList";
 
 function Home() {
   return (
     <section className="h-screen">
-      <header className="flex justify-between items-center px-20 py-5">
+      <header className="flex justify-between items-center px-20 py-9">
         <div>
-          <img src="" alt="logo" />
+          {/* <video src=''></video> */}
         </div>
 
         <div className=" flex justify-center items-center">
           <nav className="flex justify-center items-center list-none gap-10">
-            <li className="text-lg font-bold cursor-pointer text-gray-500">
-              Skills
-            </li>
-            <li className="text-lg font-bold cursor-pointer text-gray-500">Projects</li>
-            <li className="text-lg font-bold cursor-pointer text-gray-500">Contact</li>
-            <li className="text-lg font-bold cursor-pointer text-gray-500">Resume</li>
+            <Li title={'Skills'} />
+            <Li title={'Projects'} />
+            <Li title={'Contact'} />
+            <Li title={'Resume'} />
             <li>
               <DarkMode />
             </li>
