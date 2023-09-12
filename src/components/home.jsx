@@ -11,20 +11,33 @@ import Icon from "./Icon";
 import Li from "./headerList";
 
 function Home() {
+
   return (
     <section className="h-screen">
-      <header className="flex justify-between items-center px-20 py-9">
-        <div>
-          {/* <video src=''></video> */}
+      <header className="flex justify-between items-center px-20 py-4">
+        <div className=" flex justify-center items-center text-lg text-sky-500 font-mono font-semibold">
+          <img
+            className="w-14 mr-2"
+            src="src\assets\pngfind.com-robot-png-1019144.png"
+            alt="welcome"
+          />
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .pauseFor(1000)
+                .typeString("Hello!")
+                .start()
+            }}
+          />
         </div>
 
         <div className=" flex justify-center items-center">
           <nav className="flex justify-center items-center list-none gap-10">
-            <Li title={'Skills'} />
-            <Li title={'Projects'} />
-            <Li title={'Contact'} />
-            <Li title={'Resume'} />
-            <li>
+            <Li title={"Skills"} />
+            <Li title={"Projects"} />
+            <Li title={"Contact"} />
+            <Li title={"Resume"} />
+            <li className="cursor-pointer">
               <DarkMode />
             </li>
           </nav>
