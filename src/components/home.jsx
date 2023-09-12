@@ -1,4 +1,5 @@
 import Typewriter from "typewriter-effect";
+import { GitHub, LinkedIn, Mail, Public } from "@mui/icons-material";
 
 function Home() {
   return (
@@ -25,13 +26,16 @@ function Home() {
 
           <div className="text-3xl font-mono my-5">
             <Typewriter
-                options={{
-                strings: ["A Full Stack Web Developer", "A MERN Stack Developer"],
+              options={{
+                strings: [
+                  "A Full Stack Web Developer",
+                  "A MERN Stack Developer",
+                ],
                 autoStart: true,
                 loop: true,
                 delay: 80,
-                deleteSpeed: 50,
-                }}
+                deleteSpeed: 60,
+              }}
             />
           </div>
 
@@ -42,11 +46,49 @@ function Home() {
           </p>
 
           <div>
-            <nav className="flex justify-center items-center list-none">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <nav className="flex items-center list-none gap-5 my-6  ">
+              <li className="text-blue-400 hover:text-blue-600">
+                <a
+                  href="https://github.com/Sohel-786"
+                  aria-label="github"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GitHub />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sohel-shaikh-8ba7a9110/"
+                  aria-label="linkedin"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedIn />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Sohel-786"
+                  aria-label="email"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link link--icon"
+                >
+                  <Mail />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Sohel-786"
+                  aria-label="public"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link link--icon"
+                >
+                  <Public />
+                </a>
+              </li>
             </nav>
           </div>
         </div>
