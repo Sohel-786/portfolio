@@ -35,13 +35,13 @@ function Home() {
             </nav>
           </div>
         </div>
-        <div className="w-5/12 flex justify-center items-center">
+        <div className="w-5/12 h-full flex justify-center items-center">
           <div
-            className="w-7/12 h-4/6 rounded-full border-2 border-black"
+            className="w-7/12 h-4/6 rounded-3xl bg-cover"
             style={{
-              backgroundImage : "url('https://avatars.githubusercontent.com/u/119344940?v=4')",
-              backgroundSize : "cover",
-              backgroundRepeat : "no-repeat"
+              backgroundImage : "url('https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg')",
+              backgroundRepeat : "no-repeat",
+              backgroundPosition : 'center'
             }}
           ></div>
         </div>
