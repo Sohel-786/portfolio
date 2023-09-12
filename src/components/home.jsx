@@ -1,21 +1,33 @@
 import Typewriter from "typewriter-effect";
-import { GitHub, LinkedIn, Mail, Public } from "@mui/icons-material";
+import {
+  GitHub,
+  LinkedIn,
+  Mail,
+  Public,
+  Phone,
+  DarkMode,
+} from "@mui/icons-material";
+import Icon from "./Icon";
 
 function Home() {
   return (
     <section className="h-screen">
-      <header className="flex justify-between items-center px-8 py-5">
+      <header className="flex justify-between items-center px-20 py-5">
         <div>
           <img src="" alt="logo" />
         </div>
 
         <div className=" flex justify-center items-center">
-          <nav className="flex justify-center items-center list-none gap-8">
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li>Resume</li>
-            <li></li>
+          <nav className="flex justify-center items-center list-none gap-10">
+            <li className="text-lg font-bold cursor-pointer text-gray-500">
+              Skills
+            </li>
+            <li className="text-lg font-bold cursor-pointer text-gray-500">Projects</li>
+            <li className="text-lg font-bold cursor-pointer text-gray-500">Contact</li>
+            <li className="text-lg font-bold cursor-pointer text-gray-500">Resume</li>
+            <li>
+              <DarkMode />
+            </li>
           </nav>
         </div>
       </header>
@@ -46,49 +58,38 @@ function Home() {
           </p>
 
           <div>
-            <nav className="flex items-center list-none gap-5 my-6  ">
-              <li className="text-blue-400 hover:text-blue-600">
-                <a
-                  href="https://github.com/Sohel-786"
-                  aria-label="github"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <GitHub />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/sohel-shaikh-8ba7a9110/"
-                  aria-label="linkedin"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <LinkedIn />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/Sohel-786"
-                  aria-label="email"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link link--icon"
-                >
-                  <Mail />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/Sohel-786"
-                  aria-label="public"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link link--icon"
-                >
-                  <Public />
-                </a>
-              </li>
+            <nav className="flex items-center list-none gap-4 my-6">
+              <Icon
+                lable={"github"}
+                url={"https://github.com/Sohel-786"}
+                element={<GitHub />}
+              />
+
+              <Icon
+                lable={"linkedin"}
+                url={"https://www.linkedin.com/in/sohel-shaikh-8ba7a9110/"}
+                element={<LinkedIn />}
+              />
+
+              <Icon
+                lable={"mail"}
+                url={"mailto:sohel.shaikh27100@gmail.com"}
+                element={<Mail />}
+              />
+
+              <Icon
+                lable={"public"}
+                url={
+                  "https://www.google.com/maps/place/Ahmedabad,+Gujarat/@23.0201581,72.414927,11z/data=!3m1!4b1!4m6!3m5!1s0x395e848aba5bd449:0x4fcedd11614f6516!8m2!3d23.022505!4d72.5713621!16zL20vMDFkODhj?entry=ttu"
+                }
+                element={<Public />}
+              />
+
+              <Icon
+                lable={"phone"}
+                url={"tel:+919664701106"}
+                element={<Phone />}
+              />
             </nav>
           </div>
         </div>
