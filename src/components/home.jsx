@@ -1,3 +1,5 @@
+import Typewriter from "typewriter-effect";
+
 function Home() {
   return (
     <section className="h-screen">
@@ -19,7 +21,20 @@ function Home() {
 
       <section className="flex justify-center items-center h-5/6 ">
         <div className="w-7/12 px-24">
-          <h1 className="text-5xl my-8 font-bold">Hi, I am Sohel Shaikh</h1>
+          <h1 className="text-5xl font-bold">Hi, I am Sohel Shaikh</h1>
+
+          <div className="text-3xl font-mono my-5">
+            <Typewriter
+                options={{
+                strings: ["A Full Stack Web Developer", "A MERN Stack Developer"],
+                autoStart: true,
+                loop: true,
+                delay: 80,
+                deleteSpeed: 50,
+                }}
+            />
+          </div>
+
           <p className="leading-7 tracking-wide text-lg font-medium font-sans">
             I enjoy developing websites and web applications. I am equipped with
             a variety of technologies and tools to help me build the best
@@ -39,9 +54,10 @@ function Home() {
           <div
             className="w-7/12 h-4/6 rounded-3xl bg-cover"
             style={{
-              backgroundImage : "url('https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg')",
-              backgroundRepeat : "no-repeat",
-              backgroundPosition : 'center'
+              backgroundImage:
+                "url('https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
             }}
           ></div>
         </div>
