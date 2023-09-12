@@ -24,7 +24,7 @@ function Home() {
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .pauseFor(1000)
+                .pauseFor(500)
                 .typeString("Hello!")
                 .start()
             }}
