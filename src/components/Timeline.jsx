@@ -63,9 +63,9 @@ function Timeline() {
             PW Skills (Remote)
           </h4>
           <p data-aos="fade-right">
-            Mentoring and clearing student's conceptual doubts via
-            standups,reviewing student's projects, reporting to the instructor.
-            Helping students to start their career in Tech.
+            Joined the One Stop Tech Solution to learn Full Stack Web
+            Development (MERN Stack). Also learned many soft skills in the
+            process.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -98,8 +98,10 @@ function Timeline() {
             Aira Euro Automation Private Limited
           </h4>
           <p data-aos="fade-right">
-            Joined the Military style Bootcamp to learn Software Development and
-            Data Structures. Also learned many soft skills in the process.
+            Determinig and overseeing consistent testing, evaluation, and
+            troubleshooting of software in all stages of completion. Implementer &
+            training provider, Runtime mistakes and problems Solver, Assess
+            management and user's need and provide them with software solutions.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
