@@ -51,7 +51,7 @@ function Timeline() {
             className="vertical-timeline-element-title font-bold"
             data-aos="fade-right"
             style={{
-                color : 'var(--clr-mode)'
+              color: "var(--clr-mode)",
             }}
           >
             Student
@@ -69,7 +69,7 @@ function Timeline() {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          date={"April 2021 - October 2021"}
+          date={"March 2019 - November 2022"}
           contentStyle={{
             boxShadow: `var(--shadow)`,
             backgroundColor: `var(--card-bg-right)`,
@@ -82,14 +82,20 @@ function Timeline() {
           }}
           icon={<MdOutlineWork />}
         >
-          <h3 className="vertical-timeline-element-title" data-aos="fade-right">
-            Student
+          <h3
+            className="vertical-timeline-element-title font-bold"
+            data-aos="fade-right"
+            style={{
+              color: "var(--clr-mode)",
+            }}
+          >
+            Software Project Coordinator
           </h3>
           <h4
             className="vertical-timeline-element-subtitle"
             data-aos="fade-right"
           >
-            Masai School (Remote)
+            Aira Euro Automation Private Limited
           </h4>
           <p data-aos="fade-right">
             Joined the Military style Bootcamp to learn Software Development and
@@ -98,29 +104,34 @@ function Timeline() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date={"2014 - 2017"}
+          date={"August 2015 - July 2018"}
           contentStyle={{
             boxShadow: `var(--shadow)`,
-            backgroundColor: `var(--clr-bg)`,
+            backgroundColor: `var(--card-bg-left)`,
             textAlign: "center",
-            color: `var(--clr-fg-alt)`,
           }}
           contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
           iconStyle={{
-            backgroundColor: `var(--clr-bg)`,
-            color: `var(--clr-primary)`,
+            backgroundColor: `white`,
+            color: `rgb(33, 150, 243)`,
           }}
           icon={<MdSchool />}
         >
-          <h3 className="vertical-timeline-element-title" data-aos="fade-right">
-            Bachelor of Science, Zoology Honors
+          <h3
+            className="vertical-timeline-element-title font-bold"
+            data-aos="fade-right"
+            style={{
+              color: "var(--clr-mode)",
+            }}
+          >
+            Diploma In Information Technology
           </h3>
           <h4
             className="vertical-timeline-element-subtitle"
             data-aos="fade-right"
           ></h4>
           <p data-aos="fade-right">
-            North Bengal St. Xavier's College, Rajganj
+            R. C. Technical Institute, Ahmedabad, Gujarat
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -128,34 +139,39 @@ function Timeline() {
           date={"March 2014"}
           contentStyle={{
             boxShadow: `var(--shadow)`,
-            backgroundColor: `var(--clr-bg)`,
+            backgroundColor: `var(--card-bg-right)`,
             textAlign: "center",
-            color: `var(--clr-fg-alt)`,
           }}
           contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
           iconStyle={{
-            backgroundColor: `var(--clr-bg)`,
-            color: `var(--clr-primary)`,
+            backgroundColor: `white`,
+            color: `rgb(33, 150, 243)`,
           }}
           icon={<MdOutlineSchool />}
         >
-          <h3 className="vertical-timeline-element-title" data-aos="fade-right">
-            Completed Higher Secondary - Science
+          <h3
+            className="vertical-timeline-element-title font-bold"
+            data-aos="fade-right"
+            style={{
+              color: "var(--clr-mode)",
+            }}
+          >
+            Completed Secondary School
           </h3>
           <h4
             className="vertical-timeline-element-subtitle"
             data-aos="fade-right"
           ></h4>
           <p data-aos="fade-right">
-            Jalpaiguri Zilla School, Jalpaiguri, West Bengal
+            Pragati School, Maninagar, Ahmedabad, Gujarat
           </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           icon={<MdStars />}
           iconStyle={{
-            backgroundColor: `var(--clr-bg)`,
-            color: `var(--clr-primary)`,
+            backgroundColor: `white`,
+            color: `rgb(33, 150, 243)`,
           }}
         ></VerticalTimelineElement>
       </VerticalTimeline>
