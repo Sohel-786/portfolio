@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+  --shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --card-bg-left : #edf9ff;
+  --card-bg-right : #82cfff;
+  --hd-clr : #3b82f6;
+}
+
+.light {
+    --clr-bg: #fcfcfc;
+    --clr-bg-alt: #fff;
+    --clr-fg: #555;
+    --clr-fg-alt: #444;
+    --clr-primary: #2978b5;
+
+  }
+  
+  .dark {
+    --clr-bg: #23283e;
+    --clr-bg-alt: #2a2f4c;
+    --clr-fg: #bdbddd;
+    --clr-fg-alt: #cdcdff;
+    --clr-primary: #90a0d9;
+  }
