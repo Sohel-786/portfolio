@@ -4,9 +4,8 @@
 
 :root{
   --shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  --card-bg-left : #edf9ff;
+  --card-bg-left : #f2f6ff;
   --card-bg-right : #82cfff;
-  --hd-clr : #3b82f6;
 }
 
 .light {

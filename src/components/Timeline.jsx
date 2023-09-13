@@ -21,23 +21,22 @@ function Timeline() {
             boxShadow: 'var(--shadow)',
             backgroundColor: `var(--card-bg-left)`,
             textAlign: "center",
-            color: `var(--hd-clr)`,
           }}
           contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
           iconStyle={{
-            backgroundColor: `var(--clr-bg)`,
-            color: `var(--clr-primary)`,
+            backgroundColor: `white`,
+            color: `rgb(33, 150, 243)`,
           }}
-          icon={<MdOutlineWork />}
+          icon={<MdSchool />}
         >
-          <h3 className="vertical-timeline-element-title" data-aos="fade-right">
-            Instructional Associate
+          <h3 className="vertical-timeline-element-title text-blue-500 font-bold" data-aos="fade-right">
+            Student
           </h3>
           <h4
             className="vertical-timeline-element-subtitle"
             data-aos="fade-right"
           >
-            Masai School
+            PW Skills (Remote)
           </h4>
           <p data-aos="fade-right">
             Mentoring and clearing student's conceptual doubts via
