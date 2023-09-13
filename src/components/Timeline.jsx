@@ -48,8 +48,11 @@ function Timeline() {
           icon={<MdSchool />}
         >
           <h3
-            className="vertical-timeline-element-title text-blue-500 font-bold"
+            className="vertical-timeline-element-title font-bold"
             data-aos="fade-right"
+            style={{
+                color : 'var(--clr-mode)'
+            }}
           >
             Student
           </h3>
@@ -69,16 +72,15 @@ function Timeline() {
           date={"April 2021 - October 2021"}
           contentStyle={{
             boxShadow: `var(--shadow)`,
-            backgroundColor: `var(--clr-bg)`,
+            backgroundColor: `var(--card-bg-right)`,
             textAlign: "center",
-            color: `var(--clr-fg-alt)`,
           }}
           contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
           iconStyle={{
-            backgroundColor: `var(--clr-bg)`,
-            color: `var(--clr-primary)`,
+            backgroundColor: `white`,
+            color: `rgb(33, 150, 243)`,
           }}
-          icon={<MdSchool />}
+          icon={<MdOutlineWork />}
         >
           <h3 className="vertical-timeline-element-title" data-aos="fade-right">
             Student

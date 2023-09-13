@@ -5,7 +5,7 @@
 :root{
   --shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --card-bg-left : #f2f6ff;
-  --card-bg-right : #cddcff;
+  --card-bg-right : #ecfeff;
   --nav-clr : rgb(107, 114, 128);
   --nav-msg-clr : rgb(14, 165, 233);
   --clr-mode : rgb(59, 130, 246);
