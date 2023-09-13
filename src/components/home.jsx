@@ -1,17 +1,10 @@
 import Typewriter from "typewriter-effect";
-import {
-  GitHub,
-  LinkedIn,
-  Mail,
-  Public,
-  Phone,
-  DarkMode,
-} from "@mui/icons-material";
 import Icon from "./Icon";
 import Li from "./headerList";
+import { FaGithub, FaLinkedin, FaRegMoon } from "react-icons/fa";
+import { MdMail, MdPhone, MdLocationOn } from 'react-icons/md'
 
 function Home() {
-
   return (
     <section className="h-screen">
       <header className="flex justify-between items-center px-20 py-4">
@@ -23,10 +16,7 @@ function Home() {
           />
           <Typewriter
             onInit={(typewriter) => {
-              typewriter
-                .pauseFor(500)
-                .typeString("Hello!")
-                .start()
+              typewriter.pauseFor(1500).typeString("Hello!").start();
             }}
           />
         </div>
@@ -37,8 +27,8 @@ function Home() {
             <Li title={"Projects"} />
             <Li title={"Contact"} />
             <Li title={"Resume"} />
-            <li className="cursor-pointer">
-              <DarkMode />
+            <li className="cursor-pointer text-lg hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md">
+              <FaRegMoon />
             </li>
           </nav>
         </div>
@@ -74,19 +64,25 @@ function Home() {
               <Icon
                 lable={"github"}
                 url={"https://github.com/Sohel-786"}
-                element={<GitHub />}
+                element={<FaGithub />}
               />
 
               <Icon
                 lable={"linkedin"}
                 url={"https://www.linkedin.com/in/sohel-shaikh-8ba7a9110/"}
-                element={<LinkedIn />}
+                element={<FaLinkedin />}
               />
 
               <Icon
                 lable={"mail"}
                 url={"mailto:sohel.shaikh27100@gmail.com"}
-                element={<Mail />}
+                element={<MdMail />}
+              />
+
+              <Icon
+                lable={"phone"}
+                url={"tel:+919664701106"}
+                element={<MdPhone />}
               />
 
               <Icon
@@ -94,13 +90,7 @@ function Home() {
                 url={
                   "https://www.google.com/maps/place/Ahmedabad,+Gujarat/@23.0201581,72.414927,11z/data=!3m1!4b1!4m6!3m5!1s0x395e848aba5bd449:0x4fcedd11614f6516!8m2!3d23.022505!4d72.5713621!16zL20vMDFkODhj?entry=ttu"
                 }
-                element={<Public />}
-              />
-
-              <Icon
-                lable={"phone"}
-                url={"tel:+919664701106"}
-                element={<Phone />}
+                element={<MdLocationOn />}
               />
             </nav>
           </div>
