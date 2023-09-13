@@ -9,6 +9,7 @@ import {
   MdOutlineSchool,
   MdStars,
 } from "react-icons/md";
+import TimelineElement from "./TimelineElement";
 
 function Timeline() {
   return (
@@ -20,7 +21,7 @@ function Timeline() {
     >
       <h1
         data-aos="fade-left"
-        className="text-3xl font-bold leading-9 tracking-wide my-7"
+        className="text-3xl font-bold leading-9 tracking-wide my-12"
       >
         My{" "}
         <span
@@ -33,141 +34,43 @@ function Timeline() {
         💫
       </h1>
       <VerticalTimeline lineColor={"black"}>
-        <VerticalTimelineElement
-          date={"January 2023 - Present"}
-          contentStyle={{
-            boxShadow: "var(--shadow)",
-            backgroundColor: `var(--card-bg-left)`,
-            textAlign: "center",
-          }}
-          contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
-          iconStyle={{
-            backgroundColor: `white`,
-            color: `rgb(33, 150, 243)`,
-          }}
-          icon={<MdSchool />}
+        <TimelineElement
+          p={
+            "Joined the One Stop Tech Solution to learn Full Stack Web Development (MERN Stack). Also learned many soft skills in the process."
+          }
+          h3={"Student"}
+          h4={"PW Skills (Remote)"}
+          d={"January 2023 - Present"}
         >
-          <h3
-            className="vertical-timeline-element-title font-bold"
-            data-aos="fade-right"
-            style={{
-              color: "var(--clr-mode)",
-            }}
-          >
-            Student
-          </h3>
-          <h4
-            className="vertical-timeline-element-subtitle"
-            data-aos="fade-right"
-          >
-            PW Skills (Remote)
-          </h4>
-          <p data-aos="fade-right">
-            Joined the One Stop Tech Solution to learn Full Stack Web
-            Development (MERN Stack). Also learned many soft skills in the
-            process.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          date={"March 2019 - November 2022"}
-          contentStyle={{
-            boxShadow: `var(--shadow)`,
-            backgroundColor: `var(--card-bg-right)`,
-            textAlign: "center",
-          }}
-          contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
-          iconStyle={{
-            backgroundColor: `white`,
-            color: `rgb(33, 150, 243)`,
-          }}
-          icon={<MdOutlineWork />}
+          <MdSchool />
+        </TimelineElement>
+
+        <TimelineElement
+          p={
+            "Determinig and overseeing consistent testing, evaluation, and troubleshooting of software in all stages of completion. Implementer & training provider, Runtime mistakes and problems Solver, Assess management and user's need and provide them with software solutions."
+          }
+          h3={"Software Project Coordinator"}
+          h4={"Aira Euro Automation Private Limited"}
+          d={"March 2019 - November 2022"}
         >
-          <h3
-            className="vertical-timeline-element-title font-bold"
-            data-aos="fade-right"
-            style={{
-              color: "var(--clr-mode)",
-            }}
-          >
-            Software Project Coordinator
-          </h3>
-          <h4
-            className="vertical-timeline-element-subtitle"
-            data-aos="fade-right"
-          >
-            Aira Euro Automation Private Limited
-          </h4>
-          <p data-aos="fade-right">
-            Determinig and overseeing consistent testing, evaluation, and
-            troubleshooting of software in all stages of completion. Implementer &
-            training provider, Runtime mistakes and problems Solver, Assess
-            management and user's need and provide them with software solutions.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date={"August 2015 - July 2018"}
-          contentStyle={{
-            boxShadow: `var(--shadow)`,
-            backgroundColor: `var(--card-bg-left)`,
-            textAlign: "center",
-          }}
-          contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
-          iconStyle={{
-            backgroundColor: `white`,
-            color: `rgb(33, 150, 243)`,
-          }}
-          icon={<MdSchool />}
+          <MdOutlineWork />
+        </TimelineElement>
+
+        <TimelineElement
+          h3={"Diploma In Information Technology"}
+          p={"R. C. Technical Institute, Ahmedabad, Gujarat"}
+          d={"August 2015 - July 2018"}
         >
-          <h3
-            className="vertical-timeline-element-title font-bold"
-            data-aos="fade-right"
-            style={{
-              color: "var(--clr-mode)",
-            }}
-          >
-            Diploma In Information Technology
-          </h3>
-          <h4
-            className="vertical-timeline-element-subtitle"
-            data-aos="fade-right"
-          ></h4>
-          <p data-aos="fade-right">
-            R. C. Technical Institute, Ahmedabad, Gujarat
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date={"March 2014"}
-          contentStyle={{
-            boxShadow: `var(--shadow)`,
-            backgroundColor: `var(--card-bg-right)`,
-            textAlign: "center",
-          }}
-          contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
-          iconStyle={{
-            backgroundColor: `white`,
-            color: `rgb(33, 150, 243)`,
-          }}
-          icon={<MdOutlineSchool />}
+          <MdSchool />
+        </TimelineElement>
+
+        <TimelineElement
+          h3={"Completed Secondary School"}
+          p={"Pragati School, Maninagar, Ahmedabad, Gujarat"}
+          d={"March 2014"}
         >
-          <h3
-            className="vertical-timeline-element-title font-bold"
-            data-aos="fade-right"
-            style={{
-              color: "var(--clr-mode)",
-            }}
-          >
-            Completed Secondary School
-          </h3>
-          <h4
-            className="vertical-timeline-element-subtitle"
-            data-aos="fade-right"
-          ></h4>
-          <p data-aos="fade-right">
-            Pragati School, Maninagar, Ahmedabad, Gujarat
-          </p>
-        </VerticalTimelineElement>
+          <MdOutlineSchool />
+        </TimelineElement>
 
         <VerticalTimelineElement
           icon={<MdStars />}
