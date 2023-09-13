@@ -6,7 +6,8 @@ export default {
     extend: {
       transitionProperty : {
         'width' : 'width ease-in'
-      }
+      },
+      
     },
   },
   plugins: [],

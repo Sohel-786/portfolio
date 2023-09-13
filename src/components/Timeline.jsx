@@ -12,13 +12,31 @@ import {
 
 function Timeline() {
   return (
-    <section className="flex items-center flex-col">
-      <h1 data-aos='fade-left' className="text-3xl font-bold leading-9 tracking-wide my-7">My Timeline 💫</h1>
+    <section
+      className="flex items-center flex-col"
+      style={{
+        color: "var(--clr-mode-text)",
+      }}
+    >
+      <h1
+        data-aos="fade-left"
+        className="text-3xl font-bold leading-9 tracking-wide my-7"
+      >
+        My{" "}
+        <span
+          style={{
+            color: "var(--nav-msg-clr)",
+          }}
+        >
+          Timeline
+        </span>{" "}
+        💫
+      </h1>
       <VerticalTimeline lineColor={"black"}>
         <VerticalTimelineElement
           date={"January 2023 - Present"}
           contentStyle={{
-            boxShadow: 'var(--shadow)',
+            boxShadow: "var(--shadow)",
             backgroundColor: `var(--card-bg-left)`,
             textAlign: "center",
           }}
@@ -29,7 +47,10 @@ function Timeline() {
           }}
           icon={<MdSchool />}
         >
-          <h3 className="vertical-timeline-element-title text-blue-500 font-bold" data-aos="fade-right">
+          <h3
+            className="vertical-timeline-element-title text-blue-500 font-bold"
+            data-aos="fade-right"
+          >
             Student
           </h3>
           <h4

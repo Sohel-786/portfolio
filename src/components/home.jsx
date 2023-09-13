@@ -8,7 +8,9 @@ function Home() {
   return (
     <section className="h-screen">
       <header className="flex justify-between items-center px-20 py-4">
-        <div className=" flex justify-center items-center text-lg text-sky-500 font-mono font-semibold">
+        <div className=" flex justify-center items-center text-lg font-mono font-semibold" style={{
+          color : 'var(--nav-msg-clr)'
+        }}>
           <img
             className="w-14 mr-2"
             src="src\assets\pngfind.com-robot-png-1019144.png"
@@ -35,8 +37,8 @@ function Home() {
       </header>
 
       <section className="flex justify-center items-center h-5/6 ">
-        <div className="w-7/12 px-24">
-          <h1 className="text-5xl font-bold">Hi, I am Sohel Shaikh</h1>
+        <div className="w-7/12 px-24" style={{color : 'var(--clr-mode-text)'}}>
+          <h1 className="text-5xl font-bold">Hi, I am <span style={{color:'var(--clr-mode)'}}>Sohel Shaikh</span></h1>
 
           <div className="text-3xl font-mono my-5">
             <Typewriter
