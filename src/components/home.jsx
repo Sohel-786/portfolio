@@ -8,7 +8,7 @@ function Home() {
   return (
     <section className="h-screen">
       <header className="flex justify-between items-center px-20 py-4">
-        <div className=" flex justify-center items-center text-lg font-mono font-semibold" style={{
+        <div data-aos="zoom-in-down" className=" flex justify-center items-center text-lg font-mono font-semibold" style={{
           color : 'var(--nav-msg-clr)'
         }}>
           <img
@@ -97,8 +97,12 @@ function Home() {
             </nav>
           </div>
         </div>
-        <div className="w-5/12 h-full flex justify-center items-center">
+        <div className="w-5/12 h-full flex justify-center items-center overflow-hidden">
           <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
             className="w-7/12 h-4/6 rounded-3xl bg-cover"
             style={{
               backgroundImage:

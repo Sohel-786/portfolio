@@ -3,6 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Timeline from "./components/Timeline";
+import Skills from "./components/Skills";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <>
       <Home />
       <Timeline />
+      <Skills />
     </>
   )
 }

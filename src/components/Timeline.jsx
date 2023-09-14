@@ -34,6 +34,7 @@ function Timeline() {
         💫
       </h1>
       <VerticalTimeline lineColor={"black"}>
+
         <TimelineElement
           p={
             "Joined the One Stop Tech Solution to learn Full Stack Web Development (MERN Stack). Also learned many soft skills in the process."
@@ -41,6 +42,7 @@ function Timeline() {
           h3={"Student"}
           h4={"PW Skills (Remote)"}
           d={"January 2023 - Present"}
+          pos={'left'}
         >
           <MdSchool />
         </TimelineElement>
@@ -52,6 +54,8 @@ function Timeline() {
           h3={"Software Project Coordinator"}
           h4={"Aira Euro Automation Private Limited"}
           d={"March 2019 - November 2022"}
+          pos={'right'}
+
         >
           <MdOutlineWork />
         </TimelineElement>
@@ -60,6 +64,8 @@ function Timeline() {
           h3={"Diploma In Information Technology"}
           p={"R. C. Technical Institute, Ahmedabad, Gujarat"}
           d={"August 2015 - July 2018"}
+          pos={'left'}
+
         >
           <MdSchool />
         </TimelineElement>
@@ -68,8 +74,10 @@ function Timeline() {
           h3={"Completed Secondary School"}
           p={"Pragati School, Maninagar, Ahmedabad, Gujarat"}
           d={"March 2014"}
+          pos={'right'}
+
         >
-          <MdOutlineSchool />
+          <MdOutlineSchool/>
         </TimelineElement>
 
         <VerticalTimelineElement

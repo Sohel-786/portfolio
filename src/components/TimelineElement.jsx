@@ -1,12 +1,12 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
-function TimelineElement({h3,h4,p,d,children}) {
+function TimelineElement({h3,h4,p,d,children, pos}) {
   return (
     <VerticalTimelineElement
       date={d}
       contentStyle={{
         boxShadow: "var(--shadow)",
-        backgroundColor: `var(--card-bg-left)`,
+        backgroundColor: `var(--card-bg-${pos})`,
         textAlign: "center",
       }}
       contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
