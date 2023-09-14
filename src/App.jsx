@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 function App() {
 
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1300 });
   }, []);
 
   return (
