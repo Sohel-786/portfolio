@@ -6,7 +6,7 @@ export default {
     extend: {
       transitionProperty : {
         'width' : 'width ease-in',
-        'height' : 'height ease-in'
+        'height' : 'height ease-in 300'
       },
     },
   },

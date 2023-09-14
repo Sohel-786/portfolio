@@ -73,7 +73,7 @@ function Timeline() {
         <TimelineElement
           h3={"Completed Secondary School"}
           p={"Pragati School, Maninagar, Ahmedabad, Gujarat"}
-          d={"March 2014"}
+          d={"March 2015"}
           pos={'right'}
 
         >
