@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       transitionProperty : {
-        'width' : 'width ease-in'
+        'width' : 'width ease-in',
+        'height' : 'height ease-in'
       },
-      
     },
   },
   plugins: [],

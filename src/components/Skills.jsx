@@ -24,7 +24,7 @@ function Skills() {
         </h1>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center gap-12 px-28 py-6">
+      <div className="flex flex-wrap justify-center items-center gap-14 px-28 py-12">
         <Tools url={`/src/assets/icons/html-5.svg`} title={'HTML5'}/>
         <Tools url={`/src/assets/icons/css3.svg`} title={'CSS3'}/>
         <Tools url={`/src/assets/icons/javascript.svg`} title={'JAVASCRIPT'}/>
