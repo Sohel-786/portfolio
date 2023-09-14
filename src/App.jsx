@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import Github from "./components/Github";
+import Projects from "./components/Projects";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Timeline />
       <Skills />
       <Github />
+      <Projects />
     </>
   )
 }

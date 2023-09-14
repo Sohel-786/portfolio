@@ -24,7 +24,7 @@ function Header(){
         <div className=" flex justify-center items-center">
           <nav className="flex justify-center items-center list-none gap-10">
             <a href="#skills"><Li title={"Skills"} /></a>
-            <Li title={"Projects"} />
+            <a href="#projects"><Li title={"Projects"} /></a>
             <Li title={"Contact"} />
             <Li title={"Resume"} />
             <li className="cursor-pointer text-lg hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md">

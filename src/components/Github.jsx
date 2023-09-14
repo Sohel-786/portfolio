@@ -15,14 +15,14 @@ function Github() {
     <section className="flex flex-col justify-center items-center my-16 gap-14">
       <div className="flex justify-center items-center gap-7">
         <h1 data-aos="fade-right" className="text-4xl font-sans font-bold">
-          <span className="text-sky-500 ">D</span>AYS I{" "}
-          <span className="text-sky-500">C</span>ODE
+          <span className="text-sky-500 ">D</span>ays I{" "}
+          <span className="text-sky-500">C</span>ode
         </h1>
         <div data-aos="zoom-in-down" className="text-6xl text-sky-500 ">
           <LiaLaptopCodeSolid />
         </div>
       </div>
-      <div className="font-bold font-mono" style={{
+      <div data-aos='fade-left' className="font-bold font-mono" style={{
         color : 'var(--clr-mode-text)'
       }}>
         <GitHubCalendar
