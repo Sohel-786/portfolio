@@ -11,7 +11,7 @@ function Header(){
         }}>
           <img
             className="w-14 mr-2"
-            src="src\assets\pngfind.com-robot-png-1019144.png"
+            src="src\assets\robo.png"
             alt="welcome"
           />
           <Typewriter
