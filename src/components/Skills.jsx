@@ -24,13 +24,13 @@ function Skills() {
         </h1>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center gap-12 px-32 py-6">
+      <div className="flex flex-wrap justify-center items-center gap-12 px-28 py-6">
         <Tools url={`/src/assets/icons/html-5.svg`} title={'HTML5'}/>
         <Tools url={`/src/assets/icons/css3.svg`} title={'CSS3'}/>
         <Tools url={`/src/assets/icons/javascript.svg`} title={'JAVASCRIPT'}/>
         <Tools url={`/src/assets/icons/reactjs.svg`} title={'REACT'}/>
         <Tools url={`/src/assets/icons/redux.svg`} title={'REDUX'}/>
-        <Tools url={`/src/assets/icons/tailwindcss.svg`} title={'TAILWIND'}/>
+        <Tools url={`/src/assets/icons/tailwindcss.svg`} title={'TAILWIND CSS'}/>
         <Tools url={`/src/assets/icons/nodejs.svg`} title={'NODE JS'}/>
         <Tools url={`/src/assets/icons/mongodb.svg`} title={'MONGODB'}/>
         <Tools url={`/src/assets/icons/express.svg`} title={'EXPRESS'}/>
