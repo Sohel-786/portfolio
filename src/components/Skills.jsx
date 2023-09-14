@@ -3,9 +3,10 @@ import Tools from "./Tools";
 function Skills() {
   return (
     <section
-      className="flex flex-col justify-center my-14 w-full"
+      id="skills"
+      className="flex flex-col justify-center my-9 w-full"
     >
-      <div data-aos="flip-right">
+      <div data-aos="flip-right" className="mt-8">
         <h1
           className="text-4xl font-bold font-serif leading-9 tracking-wide my-5 ml-16"
           style={{

@@ -23,7 +23,7 @@ function Header(){
 
         <div className=" flex justify-center items-center">
           <nav className="flex justify-center items-center list-none gap-10">
-            <Li title={"Skills"} />
+            <a href="#skills"><Li title={"Skills"} /></a>
             <Li title={"Projects"} />
             <Li title={"Contact"} />
             <Li title={"Resume"} />
