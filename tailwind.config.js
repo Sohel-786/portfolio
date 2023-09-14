@@ -8,6 +8,9 @@ export default {
         'width' : 'width ease-in',
         'height' : 'height ease-in 300'
       },
+      height : {
+        'home' : '500px'
+      }
     },
   },
   plugins: [],

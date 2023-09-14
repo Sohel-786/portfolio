@@ -1,44 +1,13 @@
 import Typewriter from "typewriter-effect";
 import Icon from "./Icon";
-import Li from "./headerList";
-import { FaGithub, FaLinkedin, FaRegMoon } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdMail, MdPhone, MdLocationOn } from 'react-icons/md'
 
 function Home() {
   return (
-    <section className="h-screen">
-      <header className="flex justify-between items-center px-20 py-4">
-        <div data-aos="zoom-in-down" className=" flex justify-center items-center text-lg font-mono font-semibold" style={{
-          color : 'var(--nav-msg-clr)'
-        }}>
-          <img
-            className="w-14 mr-2"
-            src="src\assets\pngfind.com-robot-png-1019144.png"
-            alt="welcome"
-          />
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter.pauseFor(1500).typeString("Hello!").start();
-            }}
-          />
-        </div>
-
-        <div className=" flex justify-center items-center">
-          <nav className="flex justify-center items-center list-none gap-10">
-            <Li title={"Skills"} />
-            <Li title={"Projects"} />
-            <Li title={"Contact"} />
-            <Li title={"Resume"} />
-            <li className="cursor-pointer text-lg hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md">
-              <FaRegMoon />
-            </li>
-          </nav>
-        </div>
-      </header>
-
-      <section className="flex justify-center items-center h-5/6 ">
+      <section className="flex justify-center items-center h-[500px]">
         <div className="w-7/12 px-24" style={{color : 'var(--clr-mode-text)'}}>
-          <h1 className="text-5xl font-bold">Hi, I am <span style={{color:'var(--clr-mode)'}}>Sohel Shaikh</span></h1>
+          <h1 data-aos='fade-right' className="text-5xl font-bold">Hi, I am <span style={{color:'var(--clr-mode)'}}>Sohel Shaikh</span></h1>
 
           <div className="text-3xl font-mono my-5">
             <Typewriter
@@ -50,7 +19,7 @@ function Home() {
                 autoStart: true,
                 loop: true,
                 delay: 80,
-                deleteSpeed: 60,
+                deleteSpeed: 50,
               }}
             />
           </div>
@@ -113,7 +82,6 @@ function Home() {
           ></div>
         </div>
       </section>
-    </section>
   );
 }
 

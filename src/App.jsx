@@ -1,9 +1,10 @@
-import Home from "./components/home"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Timeline from "./components/Timeline";
 import Skills from "./components/Skills";
+import Home from "./components/Home";
+import Header from "./components/Header";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <Home />
       <Timeline />
       <Skills />
