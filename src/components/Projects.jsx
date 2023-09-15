@@ -17,17 +17,29 @@ function Projects() {
       className="flex flex-col my-16 justify-center items-center px-10"
     >
       <div data-aos="zoom-out-up">
-        <h1 className="text-5xl font-bold font-sans leading-9 tracking-wide my-8 text-sky-500 mb-14">
+        <h1 className="text-5xl font-bold font-sans leading-9 tracking-wide my-6 text-sky-500 mb-8">
           Projects
         </h1>
       </div>
 
-      <div className="flex justify-center items-center ">
+      <div className="flex flex-col gap-5 justify-center items-center ">
         <ProjectCard
           title={"Mailchimp Replica"}
-          url={
-            "https://shahnawaz-malek.netlify.app/images/mailchimp1.jpg"
-          }
+          url={"https://shahnawaz-malek.netlify.app/images/mailchimp1.jpg"}
+          tools={[html, css, js, node, mongo, ex]}
+          points={[
+            "Signup/Login with backend support",
+            "Starting campaigns with multiple user data",
+            "Sending emails in bulk and Tracking record of previous campaigns",
+          ]}
+          alt={"Mailchimp"}
+          liveUrl={""}
+          gitUrl={""}
+        />
+
+        <ProjectCard
+          title={"Mailchimp Replica"}
+          url={"https://shahnawaz-malek.netlify.app/images/mailchimp1.jpg"}
           tools={[html, css, js, node, mongo, ex]}
           points={[
             "Signup/Login with backend support",
