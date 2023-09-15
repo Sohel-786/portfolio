@@ -5,7 +5,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
   return (
     <div
-      className="flex gap-6 h-[500px] py-7 px-5 justify-center items-center rounded-2xl border-2 border-sky-200"
+      className=" flex gap-6 h-[500px] py-7 px-5 justify-center items-center rounded-2xl border-2 border-sky-200"
       style={{
         boxShadow: "var(--shadow)",
       }}
