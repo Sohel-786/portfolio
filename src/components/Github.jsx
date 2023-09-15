@@ -22,11 +22,11 @@ function Github() {
           <LiaLaptopCodeSolid />
         </div>
       </div>
-      <div data-aos='fade-left' className="font-bold font-mono" style={{
+      <div data-aos='fade-up' className="font-bold font-mono" style={{
         color : 'var(--clr-mode-text)'
       }}>
         <GitHubCalendar
-          username="sohel-786"
+          username="Sohel-786"
           fontSize={18}
           blockSize={15}
           blockMargin={5}
