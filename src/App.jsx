@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-black">
+    <>
       <Header />
       <Home />
       <Timeline />
@@ -24,7 +24,7 @@ function App() {
       <Github />
       <Projects />
       <Contact />
-    </div>
+    </>
   )
 }
 
