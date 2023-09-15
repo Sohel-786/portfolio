@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import Github from "./components/Github";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact/Contact";
 
 function App() {
 
@@ -15,14 +16,15 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="bg-black">
       <Header />
       <Home />
       <Timeline />
       <Skills />
       <Github />
       <Projects />
-    </>
+      <Contact />
+    </div>
   )
 }
 
