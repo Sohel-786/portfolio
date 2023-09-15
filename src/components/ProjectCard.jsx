@@ -4,8 +4,8 @@ import { IoMdArrowDropright } from "react-icons/io";
 
 function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
   return (
-    <div
-      className=" flex gap-6 h-[500px] py-7 px-5 justify-center items-center rounded-2xl border-2 border-sky-200 "
+    <section
+      className=" flex gap-6 h-[500px] py-7 px-5 m-5 hover:scale-105 transition-all ease-in-out duration-300 justify-center items-center rounded-2xl border-2 border-sky-200 "
       style={{
         boxShadow: "var(--shadow)",
       }}
@@ -60,7 +60,7 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
 
         <Button live={liveUrl} git={gitUrl} />
       </div>
-    </div>
+    </section>
   );
 }
 
