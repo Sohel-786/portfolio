@@ -22,7 +22,7 @@ function Projects() {
         </h1>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center ">
         <ProjectCard
           title={"Mailchimp Replica"}
           url={
