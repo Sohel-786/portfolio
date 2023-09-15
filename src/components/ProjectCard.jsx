@@ -30,7 +30,7 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
       </div>
 
       <div
-        className="w-6/12 h-full flex flex-col py-5 border-2 border-red-400 "
+        className="w-6/12 h-full flex flex-col py-5 "
         style={{
           color: "var(--clr-mode-text)",
         }}
@@ -47,7 +47,9 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
           {points.map((el) => {
             return (
               <div className="flex gap-2">
-                <div className="text-xl pt-1 text-sky-500"><IoMdArrowDropright /></div>
+                <div className="text-xl pt-1 text-sky-500">
+                  <IoMdArrowDropright />
+                </div>
                 <li className="text-xl font-bold font-mono" key={nanoid()}>
                   {el}
                 </li>
