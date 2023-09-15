@@ -20,7 +20,7 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
             return (
               <img
                 data-aos='fade-down'
-                data-aos-duration= {'' + (1200 + (100 * i)) }
+                data-aos-duration= {'' + (1000 + (100 * i)) }
                 className="w-1/5 h-12"
                 key={nanoid()}
                 src={`/src/assets/icons/${el}.svg`}
