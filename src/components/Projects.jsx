@@ -26,9 +26,9 @@ function Projects() {
         <ProjectCard
           title={"Mailchimp Replica"}
           url={
-            "https://raw.githubusercontent.com/harshchaturvedi1/mailChimp-clone/master/public/githubReadme/home.png"
+            "https://shahnawaz-malek.netlify.app/images/mailchimp1.jpg"
           }
-          tools={[html, css, js, node, ex, mongo]}
+          tools={[html, css, js, node, mongo, ex]}
           points={[
             "Signup/Login with backend support",
             "Starting campaigns with multiple user data",
