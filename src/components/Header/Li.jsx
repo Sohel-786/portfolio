@@ -3,8 +3,6 @@ import { ThemeContext } from "../../Context/ThemeContext";
 
 function Li({ title }) {
   const { theme } = useContext(ThemeContext);
-  const style =
-    theme === "dark" ? { color: "rgb(96, 165, 250)" } : { color: "rgb(37, 99, 235)" };
 
   return (
     <li id={ theme === 'dark' ? 'dark' : 'light'} className="text-lg hover:text-sky-500 relative font-bold pb-1 cursor-pointer before:absolute before:h-1 before:w-0 before:bottom-0 before:bg-sky-400 hover:before:w-full focus:before:w-full hover:before:duration-300 before:ease-in before:duration-300 before:rounded-sm">

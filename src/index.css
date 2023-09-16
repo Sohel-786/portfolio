@@ -19,10 +19,10 @@
   --shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --card-bg-left : #0000007d;
   --card-bg-right : #ecfeff;
-  --nav-msg-clr : rgb(14, 165, 233);
+  --nav-msg-clr : rgb(56, 255, 242);
   --clr-mode : rgb(0, 255, 238);
   --clr-mode-text : #ffffff;
-  --shadow-tools :rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  --shadow-tools :rgb(0, 255, 238) 0px 5px 15px 0px;
   --bg-clr : #181823;
 
 }

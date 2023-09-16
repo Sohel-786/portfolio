@@ -10,8 +10,12 @@ import {
   MdStars,
 } from "react-icons/md";
 import TimelineElement from "./TimelineElement";
+import { useContext } from "react";
+import { ThemeContext } from "../../Context/ThemeContext";
 
 function Timeline() {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <section
       className="flex items-center flex-col"
@@ -33,7 +37,7 @@ function Timeline() {
         </span>{" "}
         💫
       </h1>
-      <VerticalTimeline lineColor={"black"}>
+      <VerticalTimeline lineColor={theme === 'light' ?"black" : 'white'}>
 
         <TimelineElement
           p={
