@@ -16,7 +16,7 @@ function Header(){
           />
           <Typewriter
             onInit={(typewriter) => {
-              typewriter.pauseFor(1500).typeString("Hello!").start();
+              typewriter.pauseFor(1500).typeString('Hello!').start();
             }}
           />
         </div>

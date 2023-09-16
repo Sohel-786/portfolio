@@ -8,7 +8,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="px-20 flex flex-col items-center justify-center py-5 gap-16 mb-12"
+      className="px-20 flex flex-col items-center justify-center py-5 gap-16 mb-12 mt-11"
     >
       <div data-aos='flip-up' className="flex justify-center items-center gap-5 text-3xl font-sans font-bold">
         <h1>Lets Work <span className="text-sky-500">Together</span></h1>

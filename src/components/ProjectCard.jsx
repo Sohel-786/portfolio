@@ -10,7 +10,7 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
         boxShadow: "var(--shadow)",
       }}
     >
-      <div className="flex flex-col justify-center items-center gap-6 w-9/12 h-full">
+      <div className="flex flex-col justify-center items-center gap-6 w-7/12 h-full">
         <div
           data-aos="fade-right"
           className="rounded-2xl overflow-hidden shadow-md shadow-sky-300 h-5/6"
@@ -19,7 +19,6 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
         </div>
 
         <div
-          data-aos="flip-right"
           className="flex justify-center items-center gap-4"
         >
           {tools.map((el, i) => {
@@ -36,12 +35,13 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
       </div>
 
       <div
-        className="w-6/12 h-full flex flex-col py-5 "
+        className=" h-full flex flex-col py-5 w-5/12"
         style={{
           color: "var(--clr-mode-text)",
         }}
       >
         <h1
+        data-aos ='fade-right'
           className="text-4xl font-bold font-sans"
           style={{
             color: "var(--clr-mode)",
@@ -52,11 +52,11 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
         <ul className="flex flex-col gap-3 my-8">
           {points.map((el) => {
             return (
-              <div className="flex gap-2">
-                <div className="text-xl pt-1 text-sky-500">
+              <div className="flex gap-2"  key={nanoid()}>
+                <div data-aos='fade-left' className="text-xl pt-1 text-sky-500">
                   <IoMdArrowDropright />
                 </div>
-                <li className="text-xl font-bold font-mono" key={nanoid()}>
+                <li data-aos='fade-right' className="text-xl font-bold font-mono">
                   {el}
                 </li>
               </div>

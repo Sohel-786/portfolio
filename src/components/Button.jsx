@@ -1,6 +1,6 @@
 function Button({ live, git }) {
   return (
-    <div className="flex gap-5 pl-7">
+    <div data-aos='fade-up' className="flex gap-5 pl-7">
       <a href={live}>{btn("See This Live")}</a>
       <a href={git}>{btn("View Code")}</a>
     </div>
