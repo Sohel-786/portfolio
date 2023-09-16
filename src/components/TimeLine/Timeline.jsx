@@ -87,8 +87,8 @@ function Timeline() {
         <VerticalTimelineElement
           icon={<MdStars />}
           iconStyle={{
-            backgroundColor: `white`,
-            color: `rgb(33, 150, 243)`,
+            backgroundColor: `var(--bg-clr)`,
+            color: `var(--clr-mode)`,
           }}
         ></VerticalTimelineElement>
       </VerticalTimeline>

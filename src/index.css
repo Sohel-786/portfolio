@@ -16,7 +16,7 @@
 
   
 .dark{
-  --shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --shadow : rgba(253, 253, 253, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
   --card-bg-left : #0000007d;
   --card-bg-right : #ecfeff;
   --nav-msg-clr : rgb(56, 255, 242);
@@ -44,5 +44,5 @@
 }
 
 #techstack:hover{
-  color: rgb(14, 165, 233);
+  color: var(--clr-mode);
 }

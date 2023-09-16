@@ -9,10 +9,10 @@ function TimelineElement({h3,h4,p,d,children, pos}) {
         backgroundColor: `var(--card-bg-${pos})`,
         textAlign: "center",
       }}
-      contentArrowStyle={{ borderRight: "16px solid  rgb(33, 150, 243)" }}
+      contentArrowStyle={{ borderRight: "16px solid  var(--clr-mode)" }}
       iconStyle={{
-        backgroundColor: `white`,
-        color: `rgb(33, 150, 243)`,
+        backgroundColor: `var(--bg-clr)`,
+        color: `var(--clr-mode)`,
       }}
       icon={children}
     >
