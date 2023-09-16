@@ -5,7 +5,7 @@ import { FaRegMoon } from "react-icons/fa";
 
 function Header(){
     return(
-        <header className="flex justify-between items-center px-20 py-4">
+        <header id="top" className="flex justify-between items-center px-20 py-4">
         <div data-aos="zoom-in-down" className=" flex justify-center items-center text-lg font-mono font-semibold" style={{
           color : 'var(--nav-msg-clr)'
         }}>
