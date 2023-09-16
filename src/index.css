@@ -18,7 +18,7 @@
 .dark{
   --shadow : rgba(253, 253, 253, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
   --card-bg-left : #0000007d;
-  --card-bg-right : #ecfeff;
+  --card-bg-right : #1a2222;
   --nav-msg-clr : rgb(56, 255, 242);
   --clr-mode : rgb(0, 255, 238);
   --clr-mode-text : #ffffff;

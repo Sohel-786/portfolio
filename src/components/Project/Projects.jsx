@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import ProjectCard from "./ProjectCard";
 import { FaHandPeace } from "react-icons/fa6";
+import { ThemeContext } from "../../Context/ThemeContext";
 
 function Projects() {
+  const {theme} = useContext(ThemeContext);
+
   const js = "javascript";
   const html = "html-5";
   const css = "css3";
@@ -21,7 +25,7 @@ function Projects() {
         <h1 >
           Built By Me
         </h1>
-        <div className="text-blue-500"><FaHandPeace /></div>
+        <div id={theme === 'dark' ? 'dark' : 'light'} className="text-blue-500"><FaHandPeace /></div>
       </div>
 
       <div className="flex flex-col gap-5 justify-center items-center ">

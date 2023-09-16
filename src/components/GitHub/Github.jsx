@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
+import { ThemeContext } from "../../Context/ThemeContext";
 
 function Github() {
+  const {theme} = useContext(ThemeContext);
+  const id = theme === 'dark' ? 'dark' : 'light';
   const colourTheme = {
     background: "transparent",
     text: "#ffffff",
@@ -17,10 +21,10 @@ function Github() {
     }}>
       <div className="flex justify-center items-center gap-7">
         <h1 data-aos="fade-right" className="text-4xl font-sans font-bold">
-          <span className="text-sky-500 ">D</span>ays I{" "}
-          <span className="text-sky-500">C</span>ode
+          <span id={id}>D</span>ays I{" "}
+          <span id={id}>C</span>ode
         </h1>
-        <div data-aos="zoom-in-down" className="text-6xl text-sky-500 ">
+        <div data-aos="zoom-in-down" id={id} className="text-6xl">
           <LiaLaptopCodeSolid />
         </div>
       </div>

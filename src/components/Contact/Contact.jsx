@@ -14,7 +14,9 @@ function Contact() {
         color : 'var(--clr-mode-text)'
       }} data-aos='flip-up' className="flex justify-center items-center gap-5 text-3xl font-sans font-bold">
         <h1>Lets Work <span className="text-sky-500">Together</span></h1>
-        <div className="text-4xl text-sky-400"><FaSmileBeam /></div>
+        <div style={{
+          color : 'var(--nav-msg-clr)'
+        }}  className="text-4xl"><FaSmileBeam /></div>
       </div>
       <section className="flex items-center gap-20">
         <div
