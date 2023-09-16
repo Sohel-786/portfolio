@@ -17,13 +17,13 @@
   
 .dark{
   --shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  --card-bg-left : #f2f6ff;
+  --card-bg-left : #0000007d;
   --card-bg-right : #ecfeff;
   --nav-msg-clr : rgb(14, 165, 233);
-  --clr-mode : rgb(59, 130, 246);
+  --clr-mode : rgb(0, 255, 238);
   --clr-mode-text : #ffffff;
   --shadow-tools :rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  --bg-clr : #03001C;
+  --bg-clr : #181823;
 
 }
 
@@ -32,7 +32,7 @@
 }
 
 #dark{
-  color : rgb(96, 165, 250);
+  color : rgb(0, 255, 238);
 }
 
 #light:hover{
@@ -40,7 +40,7 @@
 }
 
 #dark:hover{
-  color : rgb(139, 236, 253);
+  color : rgb(46, 255, 23)
 }
 
 #techstack:hover{
