@@ -19,17 +19,22 @@ function App() {
   }, []);
 
   return (
-    <section className={ theme==='light' ? 'light' : 'dark'} style={{
-      backgroundColor : 'var(--bg-clr)'
-    }}>
+    <section
+      className={theme === "light" ? "light" : "dark"}
+      style={{
+        backgroundColor: "var(--bg-clr)",
+      }}
+    >
       <Header />
-      <ScrollToTop />
-      <Home />
-      <Timeline />
-      <Skills />
-      <Github />
-      <Projects />
-      <Contact />
+      <main>
+        <ScrollToTop />
+        <Home />
+        <Timeline />
+        <Skills />
+        <Github />
+        <Projects />
+        <Contact />
+      </main>
     </section>
   );
 }
