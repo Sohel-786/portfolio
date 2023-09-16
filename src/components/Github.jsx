@@ -12,7 +12,7 @@ function Github() {
     grade0: "#ecd9fc",
   };
   return (
-    <section className="flex flex-col justify-center items-center my-16 gap-14">
+    <section className="flex flex-col justify-center items-center my-20 gap-14">
       <div className="flex justify-center items-center gap-7">
         <h1 data-aos="fade-right" className="text-4xl font-sans font-bold">
           <span className="text-sky-500 ">D</span>ays I{" "}

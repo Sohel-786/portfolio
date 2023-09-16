@@ -5,22 +5,26 @@ import { IoMdArrowDropright } from "react-icons/io";
 function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
   return (
     <section
-      className=" flex gap-6 h-[500px] py-7 px-5 m-5 hover:scale-105 transition-all ease-in-out duration-300 justify-center items-center rounded-2xl border-2 border-sky-200 "
+      className=" flex gap-6 h-[485px] py-7 px-5 m-5 hover:scale-105 transition-all ease-in-out duration-300 justify-center items-center rounded-2xl border-2 border-sky-200 "
       style={{
         boxShadow: "var(--shadow)",
       }}
     >
       <div className="flex flex-col justify-center items-center gap-6 w-9/12 h-full">
-        <div data-aos='fade-right' className="rounded-2xl overflow-hidden shadow-md shadow-sky-300 h-5/6">
+        <div
+          data-aos="fade-right"
+          className="rounded-2xl overflow-hidden shadow-md shadow-sky-300 h-5/6"
+        >
           <img className="w-full h-full" src={url} alt={alt} />
         </div>
 
-        <div className="flex justify-center items-center gap-4">
-          {tools.map((el,i) => {
+        <div
+          data-aos="flip-right"
+          className="flex justify-center items-center gap-4"
+        >
+          {tools.map((el, i) => {
             return (
               <img
-                data-aos='fade-down'
-                data-aos-duration= {'' + (1000 + (100 * i)) }
                 className="w-1/5 h-12"
                 key={nanoid()}
                 src={`/src/assets/icons/${el}.svg`}

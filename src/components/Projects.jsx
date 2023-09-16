@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import { FaHandPeace } from "react-icons/fa6";
 
 function Projects() {
   const js = "javascript";
@@ -16,10 +17,11 @@ function Projects() {
       id="projects"
       className="flex flex-col my-16 justify-center items-center px-10"
     >
-      <div data-aos="zoom-out-up">
-        <h1 className="text-5xl font-bold font-sans leading-9 tracking-wide my-6 text-sky-500 mb-8">
-          Projects
+      <div data-aos="zoom-out-up" className="text-5xl font-bold font-sans leading-9 tracking-wide my-6 text-sky-400 mb-11 flex justify-center items-center gap-6">
+        <h1 >
+          Built By Me
         </h1>
+        <div className="text-blue-500"><FaHandPeace /></div>
       </div>
 
       <div className="flex flex-col gap-5 justify-center items-center ">
