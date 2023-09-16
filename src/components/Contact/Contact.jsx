@@ -10,7 +10,9 @@ function Contact() {
       id="contact"
       className="px-20 flex flex-col items-center justify-center py-5 gap-16  pb-16 mt-11"
     >
-      <div data-aos='flip-up' className="flex justify-center items-center gap-5 text-3xl font-sans font-bold">
+      <div style={{
+        color : 'var(--clr-mode-text)'
+      }} data-aos='flip-up' className="flex justify-center items-center gap-5 text-3xl font-sans font-bold">
         <h1>Lets Work <span className="text-sky-500">Together</span></h1>
         <div className="text-4xl text-sky-400"><FaSmileBeam /></div>
       </div>

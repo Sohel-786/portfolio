@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../Context/ThemeContext";
+
 function ContactIcon({ url, children, text }) {
+
   return (
     <div className="flex gap-10 items-center">
       <div data-aos='zoom-in-left' className="text-4xl cursor-pointer text-blue-500 hover:text-blue-800">
