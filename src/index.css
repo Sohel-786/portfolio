@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-:root{
+.light{
   --shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --card-bg-left : #f2f6ff;
   --card-bg-right : #ecfeff;
@@ -12,21 +12,23 @@
   --clr-mode : rgb(59, 130, 246);
   --clr-mode-text : rgb(0, 0, 0);
   --shadow-tools :rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  --bg-clr : #ffffff;
 }
 
-.light {
-    --clr-bg: #fcfcfc;
-    --clr-bg-alt: #fff;
-    --clr-fg: #555;
-    --clr-fg-alt: #444;
-    --clr-primary: #2978b5;
-
-  }
   
-  .dark {
-    --clr-bg: #23283e;
-    --clr-bg-alt: #2a2f4c;
-    --clr-fg: #bdbddd;
-    --clr-fg-alt: #cdcdff;
-    --clr-primary: #90a0d9;
-  }
+.dark{
+  --shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --card-bg-left : #f2f6ff;
+  --card-bg-right : #ecfeff;
+  --nav-clr : rgb(107, 114, 128);
+  --nav-msg-clr : rgb(14, 165, 233);
+  --clr-mode : rgb(59, 130, 246);
+  --clr-mode-text : #ffffff;
+  --shadow-tools :rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  --bg-clr : #0C356A;
+
+}
+
+#techstack:hover{
+  color: rgb(14, 165, 233);
+}

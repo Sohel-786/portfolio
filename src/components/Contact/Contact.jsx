@@ -8,7 +8,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="px-20 flex flex-col items-center justify-center py-5 gap-16 mb-12 mt-11"
+      className="px-20 flex flex-col items-center justify-center py-5 gap-16  pb-16 mt-11"
     >
       <div data-aos='flip-up' className="flex justify-center items-center gap-5 text-3xl font-sans font-bold">
         <h1>Lets Work <span className="text-sky-500">Together</span></h1>
@@ -27,7 +27,7 @@ function Contact() {
           />
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 h-full">
           <ContactIcon
             url={"https://github.com/Sohel-786"}
             text={"https://github.com/Sohel-786"}
