@@ -25,8 +25,8 @@ function App() {
         backgroundColor: "var(--bg-clr)",
       }}
     >
-      <Header />
-      <main>
+      <main className="max-width overflow-hidden mx-auto">
+        <Header />
         <ScrollToTop />
         <Home />
         <Timeline />

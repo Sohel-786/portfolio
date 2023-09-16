@@ -4,7 +4,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="flex flex-col justify-center my-9 w-full"
+      className="flex flex-col justify-center my-9"
     >
       <div data-aos="flip-right" className="mt-8">
         <h1

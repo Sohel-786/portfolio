@@ -5,7 +5,7 @@ import { MdMail, MdPhone, MdLocationOn } from "react-icons/md";
 
 function Home() {
   return (
-    <section className="flex justify-center items-center h-[500px]">
+    <section className="flex justify-center items-center h-[550px]">
       <div className="w-7/12 px-24" style={{ color: "var(--clr-mode-text)" }}>
         <h1 data-aos="fade-right" className="text-5xl font-bold">
           Hi, I am{" "}

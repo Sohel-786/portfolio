@@ -46,3 +46,11 @@
 #techstack:hover{
   color: var(--clr-mode);
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.max-width{
+  max-width: 1440px;
+}
