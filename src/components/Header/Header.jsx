@@ -71,7 +71,7 @@ function Header() {
         </div>
       ) : null}
 
-      <div className=" hidden sm:flex justify-center items-center">
+      <div className="hidden sm:flex justify-center items-center">
         <nav className="flex justify-center items-center list-none gap-10 px-4 py-2">
           <a href="#skills">
             <Li title={"Skills"} />

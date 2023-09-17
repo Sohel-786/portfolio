@@ -11,7 +11,8 @@ export default {
       height : {
         'fix' : '500px',
         'pro' : '485px',
-        'home' : '550px'
+        'home' : '550px',
+        'mobileHome': '770px'
 
       },
       boxShadow: {

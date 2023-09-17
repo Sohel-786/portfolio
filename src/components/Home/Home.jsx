@@ -5,14 +5,14 @@ import { MdMail, MdPhone, MdLocationOn } from "react-icons/md";
 
 function Home() {
   return (
-    <section className="flex justify-center items-center h-[550px]">
-      <div className="w-7/12 px-24" style={{ color: "var(--clr-mode-text)" }}>
-        <h1 data-aos="fade-right" className="text-5xl font-bold">
+    <section className="sm:flex justify-center items-center sm:h-[550px] h-[770px]">
+      <div className="sm:w-7/12 sm:px-24 px-10" style={{ color: "var(--clr-mode-text)" }}>
+        <h1 data-aos="fade-right" className="sm:text-5xl text-3xl font-bold">
           Hi, I am{" "}
           <span style={{ color: "var(--clr-mode)" }}>Sohel Shaikh</span>
         </h1>
 
-        <div data-aos="flip-left" className="text-3xl font-mono my-5">
+        <div data-aos="flip-left" className="sm:text-3xl text-xl font-mono my-5">
           <Typewriter
             options={{
               strings: ["A Full Stack Web Developer", "A MERN Stack Developer"],
@@ -26,7 +26,7 @@ function Home() {
 
         <p
           data-aos="fade-up"
-          className="leading-7 tracking-wide text-lg font-medium font-sans"
+          className="leading-7 tracking-wide sm:text-lg font-medium font-sans"
         >
           I enjoy developing websites and web applications. I am equipped with a
           variety of technologies and tools to help me build the best possible
@@ -74,13 +74,9 @@ function Home() {
           </nav>
         </div>
       </div>
-      <div className="w-5/12 h-full flex justify-center items-center overflow-hidden">
+      <div className="sm:w-5/12 sm:h-full w-full h-5/12 flex justify-center items-center overflow-hidden">
         <div
-          data-aos="fade-left"
-          data-aos-anchor="#example-anchor"
-          data-aos-offset="500"
-          data-aos-duration="500"
-          className="w-7/12 h-4/6 rounded-3xl bg-cover"
+          className="w-7/12 sm:h-4/6 h-full rounded-3xl bg-cover"
           style={{
             backgroundImage:
               "url('https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg')",
