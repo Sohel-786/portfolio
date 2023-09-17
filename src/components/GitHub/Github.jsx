@@ -2,7 +2,6 @@ import { useContext } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { ThemeContext } from "../../Context/ThemeContext";
-import { defaults } from "autoprefixer";
 
 function Github() {
   const colourThemeLight = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
@@ -14,16 +13,16 @@ function Github() {
 
   return (
     <section
-      className="flex flex-col justify-center items-center my-20 gap-14 px-5"
+      className="flex flex-col justify-center items-center my-20 px-5 gap-7 sm:gap-14"
       style={{
         color: "var(--clr-mode-text)",
       }}
     >
-      <div className="flex justify-center items-center gap-7">
-        <h1 data-aos="fade-right" className="text-4xl font-sans font-bold">
+      <div className="flex justify-center items-center gap-4 sm:gap-7">
+        <h1 data-aos="fade-right" className=" font-sans font-bold text-2xl sm:text-4xl">
           <span id={id}>D</span>ays I <span id={id}>C</span>ode
         </h1>
-        <div data-aos="zoom-in-down" id={id} className="text-6xl">
+        <div data-aos="zoom-in-down" id={id} className="text-4xl sm:text-6xl">
           <LiaLaptopCodeSolid />
         </div>
       </div>
@@ -36,7 +35,7 @@ function Github() {
       >
         <GitHubCalendar
           username="Sohel-786"
-          fontSize={18}
+          // fontSize={10}
           blockSize={15}
           blockMargin={5}
           theme={{ light: theme === 'light' ? colourThemeLight : colourThemeDark}}
