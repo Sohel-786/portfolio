@@ -8,7 +8,7 @@ function Tools({ url, title, fade }) {
   return (
     <div
       data-aos={fade}
-      className="flex justify-center items-center flex-col hover:text-sky-500 h-36 text-xl font-semibold font-mono hover:text-2xl hover:font-bold hover:font-sans"
+      className="flex justify-center items-center flex-col hover:text-sky-500 h-36 sm:text-xl font-semibold font-mono sm:hover:text-2xl hover:text-xl hover:font-bold hover:font-sans"
       style={clr}
     >
       <div id="techstack" className="w-full h-28 ease-in hover:h-36 transition-all flex flex-col justify-center items-center">

@@ -5,8 +5,8 @@ import { MdMail, MdPhone, MdLocationOn } from "react-icons/md";
 
 function Home() {
   return (
-    <section className="sm:flex justify-center items-center sm:h-[550px] h-[770px]">
-      <div className="sm:w-7/12 sm:px-24 px-10" style={{ color: "var(--clr-mode-text)" }}>
+    <section className="sm:flex-row flex flex-col sm:gap-0 gap-12 justify-center items-center sm:h-[550px] h-[800px]">
+      <div className="sm:w-7/12 sm:px-24 px-10 sm:mt-0 mt-14" style={{ color: "var(--clr-mode-text)" }}>
         <h1 data-aos="fade-right" className="sm:text-5xl text-3xl font-bold">
           Hi, I am{" "}
           <span style={{ color: "var(--clr-mode)" }}>Sohel Shaikh</span>
@@ -74,8 +74,11 @@ function Home() {
           </nav>
         </div>
       </div>
-      <div className="sm:w-5/12 sm:h-full w-full h-5/12 flex justify-center items-center overflow-hidden">
+      <div className="sm:w-5/12 sm:h-full w-full h-2/5 sm:mt-0 mt-6 flex justify-center items-center overflow-hidden">
         <div
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-duration="800"
           className="w-7/12 sm:h-4/6 h-full rounded-3xl bg-cover"
           style={{
             backgroundImage:

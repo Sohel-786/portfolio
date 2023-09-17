@@ -12,7 +12,7 @@ export default {
         'fix' : '500px',
         'pro' : '485px',
         'home' : '550px',
-        'mobileHome': '770px'
+        'mobileHome': '800px'
 
       },
       boxShadow: {

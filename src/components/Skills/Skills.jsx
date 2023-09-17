@@ -6,9 +6,9 @@ function Skills() {
       id="skills"
       className="flex flex-col justify-center my-9"
     >
-      <div data-aos="flip-right" className="mt-8">
+      <div data-aos="flip-right" className="mt-8 flex justify-center items-center">
         <h1
-          className="text-4xl font-bold font-serif leading-9 tracking-wide my-5 ml-16"
+          className="sm:text-4xl text-3xl font-bold font-serif leading-9 tracking-wide my-5 sm:ml-16"
           style={{
             color: "var(--clr-mode-text)",
           }}
@@ -24,7 +24,7 @@ function Skills() {
         </h1>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-16 items-center px-28 py-12">
+      <div className="flex flex-wrap justify-center sm:gap-16 items-center sm:px-28 py-12">
 
         <Tools url={`/src/assets/icons/html-5.svg`} title={'HTML5'} fade={"fade-down-right"} />
         <Tools url={`/src/assets/icons/css3.svg`} title={'CSS3'} fade={"fade-right"}/>
