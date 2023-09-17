@@ -14,7 +14,7 @@ function Github() {
 
   return (
     <section
-      className="flex flex-col justify-center items-center my-20 gap-14"
+      className="flex flex-col justify-center items-center my-20 gap-14 px-5"
       style={{
         color: "var(--clr-mode-text)",
       }}
