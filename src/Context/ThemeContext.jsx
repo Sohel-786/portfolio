@@ -1,8 +1,9 @@
 import { createContext, useState } from "react";
+import PropTypes from 'prop-types';
 
 const ThemeContext = createContext({ theme: "", handleTheme: () => {} });
 
-function ContextProvider({ children }) {
+const ContextProvider = ({ children }) => {
   const [theme, setTheme] = useState("dark");
 
   function handleTheme() {
@@ -15,5 +16,9 @@ function ContextProvider({ children }) {
     </ThemeContext.Provider>
   );
 }
+
+ContextProvider.propTypes = {
+  children : PropTypes.node.isRequired
+};
 
 export { ThemeContext , ContextProvider };
