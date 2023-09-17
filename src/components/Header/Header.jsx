@@ -71,7 +71,7 @@ function Header() {
         </div>
       ) : null}
 
-      <div className="hidden sm:flex justify-center items-center">
+      <div className="hidden sm:flex justify-center items-center mr-10">
         <nav className="flex justify-center items-center list-none gap-10 px-4 py-2">
           <a href="#skills">
             <Li title={"Skills"} />
@@ -83,14 +83,16 @@ function Header() {
             <Li title={"Contact"} />
           </a>
           <Li title={"Resume"} />
-          <button
-            onClick={handleTheme}
-            className="cursor-pointer text-lg text-sky-400 hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md "
-          >
-            {theme === "light" ? <BsMoonStarsFill /> : <BsSunFill />}
-          </button>
+          
         </nav>
       </div>
+
+      <button
+            onClick={handleTheme}
+            className="cursor-pointer absolute right-16 text-lg text-sky-400 hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md sm:right-11"
+          >
+            {theme === "light" ? <BsMoonStarsFill /> : <BsSunFill />}
+      </button>
     </header>
   );
 }

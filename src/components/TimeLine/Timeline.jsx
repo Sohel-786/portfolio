@@ -25,7 +25,7 @@ function Timeline() {
     >
       <h1
         data-aos="fade-left"
-        className="text-3xl font-bold leading-9 tracking-wide my-12"
+        className="text-2xl font-bold leading-9 tracking-wide my-10 sm:text-3xl sm:my-12"
       >
         My{" "}
         <span

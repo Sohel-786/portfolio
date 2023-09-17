@@ -8,7 +8,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="px-20 flex flex-col items-center justify-center py-5 gap-16  pb-16 mt-11"
+      className="px-5 flex flex-col items-center justify-center py-5 gap-5 pb-24 sm:pb-16 mt-6 sm:mt-11 sm:gap-16 sm:px-20"
     >
       <div style={{
         color : 'var(--clr-mode-text)'
@@ -19,20 +19,20 @@ function Contact() {
         }}  className="text-3xl sm:text-4xl"><FaSmileBeam /></div>
       </div>
 
-      <section className="flex items-center sm:gap-20">
+      <section className="flex p-3 items-center sm:gap-20 sm:flex-row sm:p-0">
         <div
           data-aos="zoom-in-down"
           data-aos-duration="1500"
-          className="w-72 h-72 flex justify-center items-center overflow-hidden"
+          className="w-44 h-36 flex justify-center items-center overflow-hidden sm:w-72 sm:h-72"
         >
           <img
-            className="animate-[spin_15s_linear_infinite] w-10/12 h-5/6 rounded-full"
+            className="animate-[spin_15s_linear_infinite] w-10/12 h-auto rounded-full"
             src="src\assets\PngItem_700567.png"
             alt="contact"
           />
         </div>
 
-        <div className="flex flex-col gap-4 h-full">
+        <div className="flex flex-col gap-2 sm:gap-4 h-full">
           <ContactIcon
             url={"https://github.com/Sohel-786"}
             text={"https://github.com/Sohel-786"}

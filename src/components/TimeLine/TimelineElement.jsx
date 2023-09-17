@@ -17,7 +17,7 @@ function TimelineElement({h3,h4,p,d,children, pos}) {
       icon={children}
     >
       <h3
-        className="vertical-timeline-element-title font-bold text-xl"
+        className="vertical-timeline-element-title font-bold text-base sm:text-lg"
         data-aos="fade-right"
         style={{
           color: "var(--clr-mode)",
@@ -25,10 +25,10 @@ function TimelineElement({h3,h4,p,d,children, pos}) {
       >
         {h3}
       </h3>
-      <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+      <h4 className="vertical-timeline-element-subtitle text-sm font-mono font-bold sm:text-base" data-aos="fade-right">
         {h4}
       </h4>
-      <p data-aos="fade-right">
+      <p className="tracking-wide" data-aos="fade-right">
         {p}
       </p>
     </VerticalTimelineElement>
