@@ -28,7 +28,7 @@ function Projects() {
         <div id={theme === 'dark' ? 'dark' : 'light'} className="text-blue-500"><FaHandPeace /></div>
       </div>
 
-      <div className="flex flex-col gap-5 justify-center items-center ">
+      <div className="flex flex-col gap-9 justify-center items-center sm:gap-5">
         <ProjectCard
           title={"Mailchimp Replica"}
           url={"https://shahnawaz-malek.netlify.app/images/mailchimp1.jpg"}

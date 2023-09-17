@@ -12,20 +12,21 @@ function Contact() {
     >
       <div style={{
         color : 'var(--clr-mode-text)'
-      }} data-aos='flip-up' className="flex justify-center items-center gap-5 text-3xl font-sans font-bold">
+      }} data-aos='flip-up' className="flex justify-center items-center text-2xl gap-2 font-sans font-bold sm:text-3xl sm:gap-5">
         <h1>Lets Work <span className="text-sky-500">Together</span></h1>
         <div style={{
           color : 'var(--nav-msg-clr)'
-        }}  className="text-4xl"><FaSmileBeam /></div>
+        }}  className="text-3xl sm:text-4xl"><FaSmileBeam /></div>
       </div>
-      <section className="flex items-center gap-20">
+
+      <section className="flex items-center sm:gap-20">
         <div
           data-aos="zoom-in-down"
           data-aos-duration="1500"
-          className="w-64 h-64 rounded-full overflow-hidden"
+          className="w-72 h-72 flex justify-center items-center overflow-hidden"
         >
           <img
-            className="animate-[spin_15s_linear_infinite] w-full h-full"
+            className="animate-[spin_15s_linear_infinite] w-10/12 h-5/6 rounded-full"
             src="src\assets\PngItem_700567.png"
             alt="contact"
           />
