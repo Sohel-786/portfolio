@@ -19,9 +19,9 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col my-16 mb-0 justify-center items-center px-10"
+      className="flex flex-col my-16 mb-0 justify-center items-center px-5 sm:px-10"
     >
-      <div data-aos="zoom-out-up" className="text-5xl font-bold font-sans leading-9 tracking-wide my-6 text-sky-400 mb-11 flex justify-center items-center gap-6">
+      <div data-aos="zoom-out-up" className="text-2xl font-bold font-sans leading-9 tracking-wide text-sky-400 flex justify-center items-center my-4 mb-7 gap-4 sm:gap-6 sm:mb-11 sm:my-6 sm:text-5xl">
         <h1 >
           Built By Me
         </h1>

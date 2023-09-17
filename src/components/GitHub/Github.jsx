@@ -35,7 +35,7 @@ function Github() {
       >
         <GitHubCalendar
           username="Sohel-786"
-          // fontSize={10}
+          fontSize={14}
           blockSize={15}
           blockMargin={5}
           theme={{ light: theme === 'light' ? colourThemeLight : colourThemeDark}}
