@@ -5,11 +5,11 @@ function ContactIcon({ url, children, text }) {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="flex gap-2 items-center sm:gap-10">
+    <div className="flex gap-2 items-center lg:gap-10">
       <div
         id={theme === "light" ? "light" : "dark"}
         data-aos="zoom-in-left"
-        className="text-2xl cursor-pointer sm:text-4xl"
+        className="text-2xl cursor-pointer lg:text-4xl"
       >
         <a href={url} target="_blank" rel="noreferrer">
           {children}
@@ -22,7 +22,7 @@ function ContactIcon({ url, children, text }) {
         onClick={() => {
           navigator.clipboard.writeText(text);
         }}
-        className="text-xs font-mono cursor-copy active:font-bold sm:text-xl"
+        className="text-xs font-mono cursor-copy active:font-bold lg:text-xl"
       >
         <h1 className="flex-shrink" data-aos="fade-right">{text}</h1>
       </div>

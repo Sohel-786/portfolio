@@ -19,16 +19,16 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col my-16 mb-0 justify-center items-center px-5 sm:px-10"
+      className="flex flex-col my-16 mb-0 justify-center items-center px-5 lg:px-10"
     >
-      <div data-aos="zoom-out-up" className="text-2xl font-bold font-sans leading-9 tracking-wide text-sky-400 flex justify-center items-center my-4 mb-7 gap-4 sm:gap-6 sm:mb-11 sm:my-6 sm:text-5xl">
+      <div data-aos="zoom-out-up" className="text-2xl font-bold font-sans leading-9 tracking-wide text-sky-400 flex justify-center items-center my-4 mb-7 gap-4 lg:gap-6 lg:mb-11 lg:my-6 lg:text-5xl">
         <h1 >
           Built By Me
         </h1>
         <div id={theme === 'dark' ? 'dark' : 'light'} className="text-blue-500"><FaHandPeace /></div>
       </div>
 
-      <div className="flex flex-col gap-9 justify-center items-center sm:gap-5">
+      <div className="flex flex-col gap-9 justify-center items-center lg:gap-5">
         <ProjectCard
           title={"Mailchimp Replica"}
           url={"https://shahnawaz-malek.netlify.app/images/mailchimp1.jpg"}

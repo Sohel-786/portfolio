@@ -13,16 +13,16 @@ function Github() {
 
   return (
     <section
-      className="flex flex-col justify-center items-center my-20 px-5 gap-7 sm:gap-14"
+      className="flex flex-col justify-center items-center my-20 px-5 gap-7 lg:gap-14"
       style={{
         color: "var(--clr-mode-text)",
       }}
     >
-      <div className="flex justify-center items-center gap-4 sm:gap-7">
-        <h1 data-aos="fade-right" className=" font-sans font-bold text-2xl sm:text-4xl">
+      <div className="flex justify-center items-center gap-4 lg:gap-7">
+        <h1 data-aos="fade-right" className=" font-sans font-bold text-2xl lg:text-4xl">
           <span id={id}>D</span>ays I <span id={id}>C</span>ode
         </h1>
-        <div data-aos="zoom-in-down" id={id} className="text-4xl sm:text-6xl">
+        <div data-aos="zoom-in-down" id={id} className="text-4xl lg:text-6xl">
           <LiaLaptopCodeSolid />
         </div>
       </div>

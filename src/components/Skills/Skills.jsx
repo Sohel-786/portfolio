@@ -4,11 +4,11 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="flex flex-col justify-center my-4 sm:my-9"
+      className="flex flex-col justify-center my-4 lg:my-9"
     >
-      <div data-aos="flip-right" className="mt-8 flex sm:block justify-center items-center">
+      <div data-aos="flip-right" className="mt-8 flex lg:block justify-center items-center">
         <h1
-          className="sm:text-4xl text-2xl font-bold font-serif leading-9 tracking-wide my-5 sm:ml-16"
+          className="lg:text-4xl text-2xl font-bold font-serif leading-9 tracking-wide my-5 lg:ml-16"
           style={{
             color: "var(--clr-mode-text)",
           }}
@@ -24,7 +24,7 @@ function Skills() {
         </h1>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-7 items-center py-3 sm:gap-16 sm:px-28 sm:py-12">
+      <div className="flex flex-wrap justify-center gap-7 items-center py-3 lg:gap-16 lg:px-28 lg:py-12">
 
         <Tools url={`/src/assets/icons/html-5.svg`} title={'HTML5'} fade={"fade-down-right"} />
         <Tools url={`/src/assets/icons/css3.svg`} title={'CSS3'} fade={"fade-right"}/>

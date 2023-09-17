@@ -17,17 +17,17 @@ function Header() {
   return (
     <header
       id="top"
-      className="flex justify-between items-center sm:px-20 sm:pr-14 py-4 px-6"
+      className="flex justify-between items-center lg:px-20 lg:pr-14 py-4 px-6"
     >
       <div
         data-aos="zoom-in-down"
-        className=" flex justify-center items-center sm:text-lg text-sm font-mono font-semibold"
+        className=" flex justify-center items-center lg:text-lg text-sm font-mono font-semibold"
         style={{
           color: "var(--nav-msg-clr)",
         }}
       >
         <img
-          className="sm:w-14 w-9 mr-2"
+          className="lg:w-14 w-9 mr-2"
           src="src\assets\robo.png"
           alt="welcome"
         />
@@ -40,7 +40,7 @@ function Header() {
 
       <div
         onClick={handleNav}
-        className="sm:hidden z-50 absolute right-6 text-xl"
+        className="lg:hidden z-50 absolute right-6 text-xl"
         style={{
           color: "var(--clr-mode-text)",
           position : nav ? "fixed" : "absolute"
@@ -50,7 +50,7 @@ function Header() {
       </div>
 
       {nav ? (
-        <div className="sm:hidden fixed top-0 right-0 w-screen h-screen flex flex-col justify-center items-center py-11 z-40" style={{
+        <div className="lg:hidden fixed top-0 right-0 w-screen h-screen flex flex-col justify-center items-center py-11 z-40" style={{
           backgroundColor : 'var(--bg-clr)',
           color : 'var(--clr-mode-text)'
         }}>
@@ -71,7 +71,7 @@ function Header() {
         </div>
       ) : null}
 
-      <div className="hidden sm:flex justify-center items-center mr-10">
+      <div className="hidden lg:flex justify-center items-center mr-10">
         <nav className="flex justify-center items-center list-none gap-10 px-4 py-2">
           <a href="#skills">
             <Li title={"Skills"} />
@@ -89,7 +89,7 @@ function Header() {
 
       <button
             onClick={handleTheme}
-            className="cursor-pointer absolute right-16 text-lg text-sky-400 hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md sm:right-11"
+            className="cursor-pointer absolute right-16 text-lg text-sky-400 hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md lg:right-11"
           >
             {theme === "light" ? <BsMoonStarsFill /> : <BsSunFill />}
       </button>
