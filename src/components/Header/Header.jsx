@@ -20,8 +20,6 @@ function Header() {
       className="flex justify-between items-center lg:px-20 lg:pr-14 py-4 px-6"
     >
       <div
-        data-aos-duration='700'
-        data-aos="zoom-in-down"
         className=" flex justify-center items-center lg:text-lg text-base font-mono font-semibold"
         style={{
           color: "var(--nav-msg-clr)",
@@ -36,7 +34,7 @@ function Header() {
         />
         <Typewriter
           onInit={(typewriter) => {
-            typewriter.pauseFor(700).typeString("Hello!").start();
+            typewriter.pauseFor(0).typeString("Hello!").start();
           }}
         />
       </div>
