@@ -83,7 +83,7 @@ function Home() {
           data-aos-duration="800"
           className="w-9/12 md:w-7/12 lg:h-4/6 h-full rounded-3xl bg-cover overflow-hidden"
         >
-          <img className="w-full h-full" src="https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg" alt="myImage" />
+          <img rel="preload" className="w-full h-full" src="https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg" alt="myImage" />
         </div>
       </div>
     </section>
