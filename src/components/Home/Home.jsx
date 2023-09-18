@@ -5,8 +5,8 @@ import { MdMail, MdPhone, MdLocationOn } from "react-icons/md";
 
 function Home() {
   return (
-    <section className="md:flex-row flex flex-col lg:gap-0 md:gap-5 gap-24 justify-center items-center lg:h-[550px] h-[800px]">
-      <div className="lg:w-7/12 lg:px-24 px-10 lg:mt-0 mt-12" style={{ color: "var(--clr-mode-text)" }}>
+    <section className="md:flex-row flex flex-col lg:gap-0 md:gap-5 gap-32 justify-center items-center md:h-[550px] h-[950px]">
+      <div className="lg:w-7/12 lg:px-24 px-10 lg:mt-0 mt-32" style={{ color: "var(--clr-mode-text)" }}>
         <h1 data-aos="fade-right" className="lg:text-5xl text-3xl font-bold">
           Hi, I am{" "}
           <span style={{ color: "var(--clr-mode)" }}>Sohel Shaikh</span>
@@ -76,12 +76,12 @@ function Home() {
           </nav>
         </div>
       </div>
-      <div className="lg:w-5/12 lg:h-full w-full h-2/5 lg:mt-0 mt-6 flex justify-center items-center overflow-hidden">
+      <div className="lg:w-5/12 lg:h-full w-full h-homeimage lg:mt-0 mt-6 flex justify-center items-center overflow-hidden">
         <div
           data-aos="fade-left"
           data-aos-anchor="#example-anchor"
           data-aos-duration="800"
-          className="w-7/12 md:w-11/12 lg:h-4/6 h-full rounded-3xl bg-cover overflow-hidden"
+          className="w-9/12 md:w-7/12 lg:h-4/6 h-full rounded-3xl bg-cover overflow-hidden"
         >
           <img className="w-full h-full" fetchpriority="high" rel="preload" src="https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg" alt="myImage" />
         </div>
