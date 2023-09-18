@@ -5,14 +5,14 @@ import { MdMail, MdPhone, MdLocationOn } from "react-icons/md";
 
 function Home() {
   return (
-    <section className="md:flex-row flex flex-col lg:gap-0 md:gap-5 gap-40 justify-center items-center md:h-[550px] h-[950px]">
-      <div className="lg:w-7/12 lg:px-24 px-10 lg:mt-0 mt-32" style={{ color: "var(--clr-mode-text)" }}>
-        <h1 data-aos="fade-right" className="lg:text-5xl text-3xl font-bold">
+    <section className="md:flex-row flex flex-col mt-5 lg:gap-0 md:gap-5 gap-40 justify-center items-center md:h-[550px] lg:mt-0 h-mobileHome">
+      <div className="lg:w-7/12 lg:px-24 px-7 lg:mt-0 mt-36" style={{ color: "var(--clr-mode-text)" }}>
+        <h1 data-aos="fade-right" className="lg:text-5xl text-4xl font-bold">
           Hi, I am{" "}
           <span style={{ color: "var(--clr-mode)" }}>Sohel Shaikh</span>
         </h1>
 
-        <div data-aos="flip-left" className="lg:text-3xl text-base font-mono my-5">
+        <div data-aos="flip-left" className="lg:text-3xl text-xl font-mono my-7 max-h-20">
           <Typewriter
             options={{
               strings: ["A Full Stack Web Developer", "A MERN Stack Developer"],
@@ -26,7 +26,7 @@ function Home() {
 
         <p
           data-aos="fade-up"
-          className="leading-7 tracking-wide lg:text-lg font-medium font-sans"
+          className="leading-7 tracking-wide text-lg lg:text-lg font-medium font-sans"
         >
           I enjoy developing websites and web applications. I am equipped with a
           variety of technologies and tools to help me build the best possible

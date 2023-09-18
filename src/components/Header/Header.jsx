@@ -21,7 +21,7 @@ function Header() {
     >
       <div
         data-aos="zoom-in-down"
-        className=" flex justify-center items-center lg:text-lg text-sm font-mono font-semibold"
+        className=" flex justify-center items-center lg:text-lg text-base font-mono font-semibold"
         style={{
           color: "var(--nav-msg-clr)",
         }}
@@ -42,7 +42,7 @@ function Header() {
 
       <div
         onClick={handleNav}
-        className="lg:hidden z-50 absolute right-6 text-xl"
+        className="lg:hidden z-50 absolute right-6 text-2xl"
         style={{
           color: "var(--clr-mode-text)",
           position : nav ? "fixed" : "absolute"
@@ -56,7 +56,7 @@ function Header() {
           backgroundColor : 'var(--bg-clr)',
           color : 'var(--clr-mode-text)'
         }}>
-          <ul className="text-xl tracking-wider font-bold flex flex-col justify-center items-center w-full h-full gap-7">
+          <ul className="text-2xl tracking-wider font-bold flex flex-col justify-center items-center w-full h-full gap-7">
             <a onClick={handleNav} href="#skills">
               <li>Skills</li>
             </a>
@@ -92,7 +92,7 @@ function Header() {
       <button
             aria-label="theme"
             onClick={handleTheme}
-            className="cursor-pointer absolute right-16 text-lg text-sky-400 hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md lg:right-11"
+            className="cursor-pointer absolute right-16 text-2xl text-sky-400 hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md lg:right-11"
           >
             {theme === "light" ? <BsMoonStarsFill /> : <BsSunFill />}
       </button>
