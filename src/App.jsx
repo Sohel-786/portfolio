@@ -8,7 +8,7 @@ const Github = React.lazy(() => import("./components/GitHub/Github"));
 const Projects = React.lazy(() => import("./components/Project/Projects"));
 const Contact = React.lazy(() => import("./components/Contact/Contact"));
 const ScrollToTop = React.lazy(() => import("./components/Scroll/ScrollToTop"));
-import Home from "./components/Home/Home";
+const Home = React.lazy(() => import( "./components/Home/Home"));
 import { ThemeContext } from "./Context/ThemeContext";
 
 function App() {
