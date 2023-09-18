@@ -34,7 +34,8 @@ function Home() {
         </p>
 
         <div>
-          <nav className="flex items-center list-none gap-4 my-6">
+          <nav>
+            <ul className="flex items-center list-none gap-4 my-6">
             <Icon
               duration={"1600"}
               lable={"github"}
@@ -71,6 +72,7 @@ function Home() {
               }
               element={<MdLocationOn />}
             />
+            </ul>
           </nav>
         </div>
       </div>

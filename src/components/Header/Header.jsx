@@ -88,6 +88,7 @@ function Header() {
       </div>
 
       <button
+            aria-label="theme"
             onClick={handleTheme}
             className="cursor-pointer absolute right-16 text-lg text-sky-400 hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md lg:right-11"
           >

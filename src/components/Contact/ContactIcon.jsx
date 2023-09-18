@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../Context/ThemeContext";
 
-function ContactIcon({ url, children, text }) {
+function ContactIcon({ url, children, text, lable }) {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -11,7 +11,7 @@ function ContactIcon({ url, children, text }) {
         data-aos="zoom-in-left"
         className="text-2xl cursor-pointer lg:text-4xl"
       >
-        <a href={url} target="_blank" rel="noreferrer">
+        <a aria-label={lable} href={url} target="_blank" rel="noreferrer">
           {children}
         </a>
       </div>

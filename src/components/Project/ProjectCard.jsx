@@ -15,7 +15,7 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
           data-aos="fade-right"
           className="w-full rounded-2xl overflow-hidden shadow-md shadow-sky-300 h-5/6"
         >
-          <img className="w-full h-full" src={url} alt={alt} />
+          <img className="w-full aspect-[2.07]" src={url} alt={alt} />
         </div>
 
         <div
@@ -52,15 +52,15 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
         <ul className="flex flex-col my-1 gap-1 lg:my-8 lg:gap-3">
           {points.map((el) => {
             return (
-              <div className="flex gap-1 lg:gap-2"  key={nanoid()}>
+              <li className="flex gap-1 lg:gap-2"  key={nanoid()}>
 
                 <div data-aos='fade-left' className="text-xs p-0.5 text-sky-500 lg:text-xl lg:pt-1">
                   <IoMdArrowDropright />
                 </div>
-                <li data-aos='fade-right' className="text-xs font-bold font-mono lg:text-xl">
+                <p data-aos='fade-right' className="text-xs font-bold font-mono lg:text-xl">
                   {el}
-                </li>
-              </div>
+                </p>
+              </li>
             );
           })}
         </ul>
