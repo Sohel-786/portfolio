@@ -19,7 +19,7 @@ function Contact() {
         }}  className="text-3xl lg:text-4xl"><FaSmileBeam /></div>
       </div>
 
-      <section className="flex p-3 items-center lg:gap-20 lg:flex-row lg:p-0">
+      <section className="flex p-3 w-full flex-col gap-5 md:justify-center md:gap-4 md:flex-row items-center lg:gap-20 lg:flex-row lg:p-0">
         <div
           data-aos="zoom-in-down"
           data-aos-duration="1500"
