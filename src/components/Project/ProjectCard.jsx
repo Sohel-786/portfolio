@@ -24,7 +24,7 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
           {tools.map((el, i) => {
             return (
               <img
-                className="w-7 lg:h-12 lg:w-1/5"
+                className="w-7 h-full lg:h-12 lg:w-1/5"
                 key={nanoid()}
                 src={`/assets/icons/${el}.svg`}
                 alt={el}

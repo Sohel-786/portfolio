@@ -27,7 +27,7 @@ function Header() {
         }}
       >
         <img
-          className="lg:w-14 w-9 mr-2"
+          className="lg:w-14 w-9 h-full mr-2"
           src="/assets/robo.png"
           alt="welcome"
         />
