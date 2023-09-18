@@ -14,6 +14,8 @@ import { ThemeContext } from "./Context/ThemeContext";
 function App() {
   const { theme } = useContext(ThemeContext);
 
+  console.log(process.env.NODE_ENV)
+
   useEffect(() => {
     Aos.init({ duration: 1300 });
   }, []);
@@ -25,7 +27,7 @@ function App() {
         backgroundColor: "var(--bg-clr)",
       }}
     >
-      <main className="max-width overflow-hidden mx-auto">
+      <div className="max-width overflow-hidden mx-auto">
         <Header />
         <ScrollToTop />
         <Home />
@@ -34,7 +36,7 @@ function App() {
         <Github />
         <Projects />
         <Contact />
-      </main>
+      </div>
     </section>
   );
 }
