@@ -12,7 +12,7 @@ function Home() {
           <span style={{ color: "var(--clr-mode)" }}>Sohel Shaikh</span>
         </h1>
 
-        <div data-aos="flip-left" className="lg:text-3xl text-xl font-mono my-5">
+        <div data-aos="flip-left" className="lg:text-3xl text-lg font-mono my-5">
           <Typewriter
             options={{
               strings: ["A Full Stack Web Developer", "A MERN Stack Developer"],
