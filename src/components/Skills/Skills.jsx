@@ -24,7 +24,7 @@ function Skills() {
         </h1>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-7 items-center py-3 lg:gap-16 lg:px-28 lg:py-12">
+      <div className="flex flex-wrap justify-center gap-1 items-center py-3 lg:gap-16 lg:px-28 lg:py-12">
 
         <Tools url={`/assets/icons/html-5.svg`} title={'HTML5'} fade={"fade-down-right"} />
         <Tools url={`/assets/icons/css3.svg`} title={'CSS3'} fade={"fade-right"}/>
@@ -32,7 +32,7 @@ function Skills() {
         <Tools url={`/assets/icons/reactjs.svg`} title={'REACT'} fade={"fade-left"} />
         <Tools url={`/assets/icons/redux.svg`} title={'REDUX'} fade={"fade-down-left"}/>
 
-        <Tools url={`/assets/icons/tailwindcss.svg`} title={'TAILWIND CSS'} fade={"fade-down-right"}/>
+        <Tools url={`/assets/icons/tailwindcss.svg`} title={'TAILWINDCSS'} fade={"fade-down-right"}/>
         <Tools url={`/assets/icons/nodejs.svg`} title={'NODE JS'} fade={"fade-right"} />
         <Tools url={`/assets/icons/mongodb.svg`} title={'MONGODB'} fade={"fade-up"}/>
         <Tools url={`/assets/icons/express.svg`} title={'EXPRESS'} fade={"fade-left"} />
