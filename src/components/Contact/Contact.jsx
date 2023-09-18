@@ -37,8 +37,8 @@ function Contact() {
           className="w-44 h-36 flex justify-center items-center overflow-hidden lg:w-72 lg:h-72"
         >
           <img
-            className="animate-[spin_15s_linear_infinite] w-10/12 aspect-square rounded-full"
-            src="/assets/earth.webp"
+            className="animate-[spin_15s_linear_infinite] w-10/12 h-auto aspect-square rounded-full"
+            src="/assets/earth.svg"
             alt="contact"
           />
         </div>
