@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import React, { useContext, useEffect } from "react";
 const Timeline = React.lazy(() => import("./components/TimeLine/Timeline"));
 const Skills = React.lazy(() => import("./components/Skills/Skills"));
-const Header = React.lazy(() => import("./components/Header/Header"));
+import Header from "./components/Header/Header";
 const Github = React.lazy(() => import("./components/GitHub/Github"));
 const Projects = React.lazy(() => import("./components/Project/Projects"));
 const Contact = React.lazy(() => import("./components/Contact/Contact"));

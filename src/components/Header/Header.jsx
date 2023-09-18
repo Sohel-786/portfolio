@@ -27,6 +27,7 @@ function Header() {
         }}
       >
         <img
+          fetchpriority="high"
           className="lg:w-14 w-9 h-full mr-2"
           src="/assets/robo.png"
           alt="welcome"
