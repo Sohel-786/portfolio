@@ -38,7 +38,7 @@ function Contact() {
         >
           <img
             className="animate-[spin_15s_linear_infinite] w-10/12 aspect-square rounded-full"
-            src="/assets/PngItem_700567.png"
+            src="/assets/earth.webp"
             alt="contact"
           />
         </div>
