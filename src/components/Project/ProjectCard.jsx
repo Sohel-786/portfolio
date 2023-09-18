@@ -15,7 +15,7 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
           data-aos="fade-right"
           className="w-full rounded-2xl overflow-hidden shadow-md shadow-sky-300 h-5/6"
         >
-          <img className="w-full aspect-[2.07]" src={url} alt={alt} />
+          <img className="w-full h-full" src={url} alt={alt} />
         </div>
 
         <div
