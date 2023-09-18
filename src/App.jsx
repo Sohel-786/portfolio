@@ -1,14 +1,14 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useContext, useEffect } from "react";
-import Timeline from "./components/TimeLine/Timeline";
-import Skills from "./components/Skills/Skills";
+import React, { useContext, useEffect } from "react";
+const Timeline = React.lazy(() => import("./components/TimeLine/Timeline"));
+const Skills = React.lazy(() => import("./components/Skills/Skills"));
+const Header = React.lazy(() => import("./components/Header/Header"));
+const Github = React.lazy(() => import("./components/GitHub/Github"));
+const Projects = React.lazy(() => import("./components/Project/Projects"));
+const Contact = React.lazy(() => import("./components/Contact/Contact"));
+const ScrollToTop = React.lazy(() => import("./components/Scroll/ScrollToTop"));
 import Home from "./components/Home/Home";
-import Header from "./components/Header/Header";
-import Github from "./components/GitHub/Github";
-import Projects from "./components/Project/Projects";
-import Contact from "./components/Contact/Contact";
-import ScrollToTop from "./components/Scroll/ScrollToTop";
 import { ThemeContext } from "./Context/ThemeContext";
 
 function App() {
