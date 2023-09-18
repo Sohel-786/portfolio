@@ -79,17 +79,19 @@ function Home() {
           data-aos="fade-left"
           data-aos-anchor="#example-anchor"
           data-aos-duration="800"
-          className="w-7/12 lg:h-4/6 h-full rounded-3xl bg-cover"
-          style={{
-            backgroundImage:
-              "url('https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg')",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-          }}
-        ></div>
+          className="w-7/12 lg:h-4/6 h-full rounded-3xl bg-cover overflow-hidden"
+        >
+          <img className="w-full h-full" fetchpriority="high" src="https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg" alt="myImage" />
+        </div>
       </div>
     </section>
   );
 }
 
 export default Home;
+
+// style={{
+//   backgroundImage:
+//     "url('https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg')",
+//   backgroundRepeat: "no-repeat",
+//   backgroundPosition: "center",
