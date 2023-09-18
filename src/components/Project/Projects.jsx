@@ -39,22 +39,8 @@ function Projects() {
             "Sending emails in bulk and Tracking record of previous campaigns",
           ]}
           alt={"Mailchimp"}
-          liveUrl={""}
-          gitUrl={""}
-        />
-
-        <ProjectCard
-          title={"Mailchimp Replica"}
-          url={"https://shahnawaz-malek.netlify.app/images/mailchimp1.jpg"}
-          tools={[html, css, js, node, mongo, ex]}
-          points={[
-            "Signup/Login with backend support",
-            "Starting campaigns with multiple user data",
-            "Sending emails in bulk and Tracking record of previous campaigns",
-          ]}
-          alt={"Mailchimp"}
-          liveUrl={""}
-          gitUrl={""}
+          liveUrl={"https://mail-chimp-clone.vercel.app/"}
+          gitUrl={"https://github.com/harshchaturvedi1/mailChimp-clone"}
         />
       </div>
     </section>
