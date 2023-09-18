@@ -26,17 +26,17 @@ function Skills() {
 
       <div className="flex flex-wrap justify-center gap-7 items-center py-3 lg:gap-16 lg:px-28 lg:py-12">
 
-        <Tools url={`/public/assets/icons/html-5.svg`} title={'HTML5'} fade={"fade-down-right"} />
-        <Tools url={`/public/assets/icons/css3.svg`} title={'CSS3'} fade={"fade-right"}/>
-        <Tools url={`/public/assets/icons/javascript.svg`} title={'JAVASCRIPT'} fade={'fade-up'} />
-        <Tools url={`/public/assets/icons/reactjs.svg`} title={'REACT'} fade={"fade-left"} />
-        <Tools url={`/public/assets/icons/redux.svg`} title={'REDUX'} fade={"fade-down-left"}/>
+        <Tools url={`/assets/icons/html-5.svg`} title={'HTML5'} fade={"fade-down-right"} />
+        <Tools url={`/assets/icons/css3.svg`} title={'CSS3'} fade={"fade-right"}/>
+        <Tools url={`/assets/icons/javascript.svg`} title={'JAVASCRIPT'} fade={'fade-up'} />
+        <Tools url={`/assets/icons/reactjs.svg`} title={'REACT'} fade={"fade-left"} />
+        <Tools url={`/assets/icons/redux.svg`} title={'REDUX'} fade={"fade-down-left"}/>
 
-        <Tools url={`/public/assets/icons/tailwindcss.svg`} title={'TAILWIND CSS'} fade={"fade-down-right"}/>
-        <Tools url={`/public/assets/icons/nodejs.svg`} title={'NODE JS'} fade={"fade-right"} />
-        <Tools url={`/public/assets/icons/mongodb.svg`} title={'MONGODB'} fade={"fade-up"}/>
-        <Tools url={`/public/assets/icons/express.svg`} title={'EXPRESS'} fade={"fade-left"} />
-        <Tools url={`/public/assets/icons/mysql.svg`} title={'MYSQL'} fade={"fade-down-left"} />
+        <Tools url={`/assets/icons/tailwindcss.svg`} title={'TAILWIND CSS'} fade={"fade-down-right"}/>
+        <Tools url={`/assets/icons/nodejs.svg`} title={'NODE JS'} fade={"fade-right"} />
+        <Tools url={`/assets/icons/mongodb.svg`} title={'MONGODB'} fade={"fade-up"}/>
+        <Tools url={`/assets/icons/express.svg`} title={'EXPRESS'} fade={"fade-left"} />
+        <Tools url={`/assets/icons/mysql.svg`} title={'MYSQL'} fade={"fade-down-left"} />
 
       </div>
     </section>
