@@ -27,7 +27,7 @@ function Contact() {
         >
           <img
             className="animate-[spin_15s_linear_infinite] w-10/12 h-auto rounded-full"
-            src="src\assets\PngItem_700567.png"
+            src="/assets/PngItem_700567.png"
             alt="contact"
           />
         </div>

@@ -28,7 +28,7 @@ function Header() {
       >
         <img
           className="lg:w-14 w-9 mr-2"
-          src="src\assets\robo.png"
+          src="/assets/robo.png"
           alt="welcome"
         />
         <Typewriter
