@@ -38,7 +38,7 @@ function Github() {
           fontSize={14}
           blockSize={15}
           blockMargin={5}
-          theme={{colourThemeDark}}
+          theme={{light :colourThemeDark}}
         />
       </div>
     </section>
