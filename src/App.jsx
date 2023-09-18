@@ -14,8 +14,6 @@ import { ThemeContext } from "./Context/ThemeContext";
 function App() {
   const { theme } = useContext(ThemeContext);
 
-  console.log(process.env.NODE_ENV)
-
   useEffect(() => {
     Aos.init({ duration: 1300 });
   }, []);

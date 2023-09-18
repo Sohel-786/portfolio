@@ -26,7 +26,7 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
               <img
                 className="w-7 lg:h-12 lg:w-1/5"
                 key={nanoid()}
-                src={`//assets/icons/${el}.svg`}
+                src={`/src/assets/icons/${el}.svg`}
                 alt={el}
               />
             );
