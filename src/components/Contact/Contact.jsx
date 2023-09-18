@@ -26,7 +26,7 @@ function Contact() {
           className="w-44 h-36 flex justify-center items-center overflow-hidden lg:w-72 lg:h-72"
         >
           <img
-            className="animate-[spin_15s_linear_infinite] w-10/12 h-auto rounded-full"
+            className="animate-[spin_15s_linear_infinite] w-10/12 aspect-square rounded-full"
             src="/assets/PngItem_700567.png"
             alt="contact"
           />
