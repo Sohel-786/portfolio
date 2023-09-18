@@ -12,7 +12,7 @@ function Home() {
           <span style={{ color: "var(--clr-mode)" }}>Sohel Shaikh</span>
         </h1>
 
-        <div data-aos="flip-left" className="lg:text-3xl text-xl font-mono my-7 max-h-20">
+        <div data-aos="flip-left" className="lg:text-3xl text-base font-bold font-mono my-7 max-h-20">
           <Typewriter
             options={{
               strings: ["A Full Stack Web Developer", "A MERN Stack Developer"],
@@ -35,7 +35,7 @@ function Home() {
 
         <div>
           <nav>
-            <ul className="flex items-center list-none gap-4 my-6">
+            <ul className="flex items-center list-none gap-4 my-4">
             <Icon
               duration={"1600"}
               lable={"github"}
