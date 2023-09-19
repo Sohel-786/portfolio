@@ -92,7 +92,7 @@ function Home() {
           data-aos="fade-left"
           data-aos-anchor="#example-anchor"
           data-aos-duration="800"
-          className="w-8/12 md:w-7/12 lg:h-5/6 h-full rounded-3xl bg-cover overflow-hidden"
+          className="w-8/12 md:w-7/12 aspect-[0.61] rounded-3xl bg-cover overflow-hidden"
           style={{
             boxShadow : 'var(--shadow)'
           }}
