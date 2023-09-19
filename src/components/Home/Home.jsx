@@ -5,7 +5,7 @@ import { MdMail, MdPhone, MdLocationOn } from "react-icons/md";
 
 function Home() {
   return (
-    <section className="md:flex-row flex flex-col mt-5 lg:gap-0 md:gap-5 gap-40 justify-center items-center md:h-[550px] lg:mt-0 h-mobileHome">
+    <section className="md:flex-row flex flex-col mt-14 lg:gap-0 md:gap-5 gap-40 justify-center items-center md:h-[550px] lg:mt-0 h-mobileHome">
       <div
         className="lg:w-7/12 lg:px-24 px-5 lg:mt-0 mt-36"
         style={{ color: "var(--clr-mode-text)" }}
@@ -87,16 +87,19 @@ function Home() {
           </nav>
         </div>
       </div>
-      <div className="lg:w-5/12 lg:h-full w-full h-homeimage lg:mt-0 mt-6 flex justify-center items-center overflow-hidden">
+      <div className="lg:w-5/12 lg:h-full w-full h-homeimage sm:mt-0 mt-6 flex justify-center items-center">
         <div
           data-aos="fade-left"
           data-aos-anchor="#example-anchor"
           data-aos-duration="800"
-          className="w-9/12 md:w-7/12 lg:h-4/6 h-full rounded-3xl bg-cover overflow-hidden"
+          className="w-7/12 md:w-7/12 lg:h-5/6 h-full rounded-3xl bg-cover overflow-hidden"
+          style={{
+            boxShadow : 'var(--shadow)'
+          }}
         >
           <img
             className="w-full h-full"
-            src="https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg"
+            src="/assets/mine.png"
             alt="myImage"
           />
         </div>
