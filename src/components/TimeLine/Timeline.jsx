@@ -18,7 +18,7 @@ function Timeline() {
 
   return (
     <section
-      className="flex items-center flex-col"
+      className="flex items-center flex-col mt-2"
       style={{
         color: "var(--clr-mode-text)",
       }}
