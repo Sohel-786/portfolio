@@ -20,7 +20,7 @@ function Home() {
 
         <div
           data-aos="flip-left"
-          className="lg:text-3xl text-base font-bold font-mono my-7 max-h-20"
+          className="lg:text-3xl text-lg font-bold font-mono my-7 max-h-20"
         >
           <Typewriter
             options={{
