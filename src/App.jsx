@@ -27,13 +27,13 @@ function App() {
     >
       <div className="max-width overflow-hidden mx-auto">
         <Header />
-        <ScrollToTop />
         <Home />
         <Timeline />
         <Skills />
         <Github />
         <Projects />
         <Contact />
+        <ScrollToTop />
       </div>
     </section>
   );
