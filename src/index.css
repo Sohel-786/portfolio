@@ -12,6 +12,7 @@
   --clr-mode-text : rgb(0, 0, 0);
   --shadow-tools :rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   --bg-clr : #ffffff;
+  --project-points : #494949;
 }
 
   
@@ -24,7 +25,7 @@
   --clr-mode-text : #ffffff;
   --shadow-tools :rgb(0, 255, 238) 0px 5px 15px 0px;
   --bg-clr : #181823;
-
+  --project-points : #b1b1b1;
 }
 
 #light{
@@ -53,4 +54,13 @@ html{
 
 .max-width{
   max-width: 1440px;
+}
+
+.scroll::-webkit-scrollbar{
+  width: 3px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: var(--clr-mode); 
+  border-radius: 10px;
 }

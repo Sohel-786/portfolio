@@ -1,8 +1,10 @@
 function Button({ live, git }) {
   return (
-    <div data-aos='fade-up' className="flex gap-5 pl-5 mt-3 lg:pl-7 lg:m-0">
-      <a href={live}>{btn("See This Live")}</a>
-      <a href={git}>{btn("View Code")}</a>
+    <div style={{
+      color : 'var(--clr-mode-text)'
+    }} data-aos='fade-down' className="flex gap-5 pl-5 mt-3 lg:pl-7 lg:m-0">
+      <a aria-label="Live Link Of Project" target="_blank" href={live}>{btn("See This Live")}</a>
+      <a aria-label="Source code Of Project" target="_blank" href={git}>{btn("View Code")}</a>
     </div>
   );
 }

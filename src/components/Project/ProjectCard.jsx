@@ -2,15 +2,24 @@ import { nanoid } from "nanoid";
 import Button from "./Button";
 import { IoMdArrowDropright } from "react-icons/io";
 
-function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
+function ProjectCard({
+  url,
+  desc,
+  alt,
+  title,
+  points,
+  tools,
+  liveUrl,
+  gitUrl,
+}) {
   return (
     <section
-      className="flex flex-col py-4 lg:py-7 px-5 gap-3 h-[550px] hover:scale-105 transition-all ease-in-out duration-300 justify-center items-center rounded-2xl border-2 border-sky-200 lg:h-[485px] lg:gap-6 lg:flex-row lg:m-5"
+      className="flex flex-col py-4 md:py-2 lg:py-7 px-1 gap-3 h-[580px] md:h-[680px] hover:scale-105 transition-all ease-in-out duration-300 justify-center items-center rounded-2xl border-2 border-sky-200 lg:h-[510px] lg:gap-6 lg:flex-row w-[98%] md:px-3 lg:px-5 lg:m-5"
       style={{
         boxShadow: "var(--shadow)",
       }}
     >
-      <div className="flex flex-col justify-center items-center w-full h-3/5 gap-3 lg:h-full lg:w-7/12 lg:gap-6">
+      <div className="flex flex-col justify-center items-center w-full h-3/5 gap-3 md:h-[68%] lg:h-full lg:w-7/12 lg:gap-6">
         <div
           data-aos="fade-right"
           className="w-full rounded-2xl overflow-hidden shadow-md shadow-sky-300 h-5/6"
@@ -18,9 +27,7 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
           <img className="w-full h-full" src={url} alt={alt} />
         </div>
 
-        <div
-          className="flex justify-center items-center flex-wrap w-full gap-2 lg:w-auto lg:flex-nowrap lg:gap-4"
-        >
+        <div className="flex justify-center items-center flex-wrap w-full gap-2 lg:w-auto lg:flex-nowrap lg:gap-4">
           {tools.map((el, i) => {
             return (
               <img
@@ -35,13 +42,13 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
       </div>
 
       <div
-        className="w-full h-2/5 flex flex-col lg:py-5 lg:w-5/12 lg:h-full"
+        data-aos="fade-right"
+        className="w-full h-2/5 md:h-[32%] flex px-2 sm:px-0 flex-col lg:py-1 lg:w-5/12 lg:h-full"
         style={{
-          color: "var(--clr-mode-text)",
+          color: "var(--project-points)",
         }}
       >
         <h1
-        data-aos ='fade-right'
           className="text-lg font-bold font-sans lg:text-4xl"
           style={{
             color: "var(--clr-mode)",
@@ -49,15 +56,26 @@ function ProjectCard({ url, alt, title, points, tools, liveUrl, gitUrl }) {
         >
           {title}
         </h1>
-        <ul className="flex flex-col my-1 gap-1 lg:my-8 lg:gap-3">
+        <p
+          className="text-sm font-semibold font-sans md:mt-1 lg:mt-3"
+          style={{
+            color: "var(--clr-mode-text)",
+          }}
+        >
+          {"(" + desc + ")"}
+        </p>
+        <ul className="flex h-[50%] md:h-[40%] lg:h-[60%] overflow-y-auto scroll flex-col my-2 gap-3 lg:my-8 lg:gap-5 ">
           {points.map((el) => {
             return (
-              <li className="flex gap-1 lg:gap-2"  key={nanoid()}>
-
-                <div data-aos='fade-left' className="text-xs p-0.5 text-sky-500 lg:text-xl lg:pt-1">
+              <li className="flex gap-1 lg:gap-2" key={nanoid()}>
+                <div
+                  className="text-xs p-0.5 text-sky-500 lg:text-xl lg:pt-1"
+                >
                   <IoMdArrowDropright />
                 </div>
-                <p data-aos='fade-right' className="text-xs font-bold font-mono lg:text-xl">
+                <p
+                  className="text-xs font-bold font-mono lg:text-xl"
+                >
                   {el}
                 </p>
               </li>
