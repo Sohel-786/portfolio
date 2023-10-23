@@ -45,7 +45,7 @@ function Timeline() {
           }
           h3={"Student"}
           h4={"PW Skills (Remote)"}
-          d={"January 2023 - Present"}
+          d={"January 2023 - October 2023"}
           pos={'left'}
         >
           <MdSchool />

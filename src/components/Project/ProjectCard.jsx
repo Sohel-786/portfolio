@@ -1,6 +1,8 @@
 import { nanoid } from "nanoid";
 import Button from "./Button";
 import { IoMdArrowDropright } from "react-icons/io";
+import { BsDot } from 'react-icons/bs';
+import { DiResponsive } from 'react-icons/di';
 
 function ProjectCard({
   url,
@@ -11,6 +13,7 @@ function ProjectCard({
   tools,
   liveUrl,
   gitUrl,
+  responsive
 }) {
   return (
     <section
@@ -57,14 +60,14 @@ function ProjectCard({
           {title}
         </h1>
         <p
-          className="text-sm font-semibold font-sans md:mt-1 lg:mt-3"
+          className="text-sm font-semibold font-sans md:mt-1 lg:mt-2 flex items-center "
           style={{
             color: "var(--clr-mode-text)",
           }}
         >
-          {"(" + desc + ")"}
+          {"(" + desc + ")"} <span className={`${responsive ? "text-[#19cd19]" : "text-[#ff1c1c]" } font-bold text-base ml-1 flex tracking-wide`}><BsDot /> { responsive ? 'Responsive' : 'Not Responsive' }</span>
         </p>
-        <ul className="flex h-[50%] md:h-[40%] lg:h-[60%] overflow-y-auto scroll flex-col my-2 gap-3 lg:my-8 lg:gap-5 ">
+        <ul className="flex h-[50%] md:h-[40%] lg:h-[60%] overflow-y-auto scroll scroll-smooth flex-col my-2 gap-3 lg:my-8 lg:gap-5">
           {points.map((el) => {
             return (
               <li className="flex gap-1 lg:gap-2" key={nanoid()}>

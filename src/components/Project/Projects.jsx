@@ -45,6 +45,7 @@ function Projects() {
           alt={"classroom"}
           liveUrl={"https://classroom-react.netlify.app"}
           gitUrl={"https://github.com/Sohel-786/LMS"}
+          responsive= {true}
         />
       </div>
     </section>
