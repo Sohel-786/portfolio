@@ -13,7 +13,7 @@ function Projects() {
   const mongo = "mongodb";
   const node = "nodejs";
   const react = "reactjs";
-  const redux = "reduxjs";
+  const redux = "redux";
   const tailwind = "tailwindcss";
 
   return (
