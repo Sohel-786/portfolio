@@ -109,9 +109,3 @@ function Home() {
 }
 
 export default Home;
-
-// style={{
-//   backgroundImage:
-//     "url('https://rukminim2.flixcart.com/image/850/1000/kvlaaa80/poster/c/5/e/medium-anime-boy-cool-anime-well-made-matte-finish-poster-original-imag8gayfhwhyuab.jpeg')",
-//   backgroundRepeat: "no-repeat",
-//   backgroundPosition: "center",
