@@ -15,7 +15,7 @@ function App() {
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
-    Aos.init({ duration: 1300 });
+    Aos.init({ duration: 1350 });
   }, []);
 
   return (
