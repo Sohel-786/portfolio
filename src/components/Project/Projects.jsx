@@ -39,7 +39,7 @@ function Projects() {
             "User Can update profile (Picture, Name except Email), Change password or Get Email to reset password if forgotten.",
             "User can subscribe for the course through Payment Gateway. Lectures access will be there after subscribtion.",
             "User can raise a ticket to contact and will get a confirmation email.",
-            "Admin Dashboard, admin can view total Registered and Subscribed User and total Revenue.",
+            "Admin Dashboard, admin can view total of Registered and Subscribed User and total Revenue.",
             "Admin can Create/Update/Delete Course. Admin can Delete/Add Lectures.",
           ]}
           alt={"classroom"}
