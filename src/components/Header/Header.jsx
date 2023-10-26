@@ -91,7 +91,14 @@ function Header() {
           <a href="#contact">
             <Li title={"Contact"} />
           </a>
-          <Li title={"Resume"} />
+          <a
+            href="https://drive.google.com/file/d/1Dg9xZm28TXXNxcEM22jiMIgTn6gn-wUX/view?usp=sharing"
+            onClick={handleNav}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Li title={"Resume"} />
+          </a>
         </nav>
       </div>
 
