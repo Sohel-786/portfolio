@@ -44,17 +44,20 @@ function Header() {
         className="lg:hidden z-50 absolute right-6 text-2xl"
         style={{
           color: "var(--clr-mode-text)",
-          position : nav ? "fixed" : "absolute"
+          position: nav ? "fixed" : "absolute",
         }}
       >
         {nav ? <IoClose /> : <GiHamburgerMenu />}
       </div>
 
       {nav ? (
-        <div className="lg:hidden fixed top-0 right-0 w-screen h-screen flex flex-col justify-center items-center py-11 z-40" style={{
-          backgroundColor : 'var(--bg-clr)',
-          color : 'var(--clr-mode-text)'
-        }}>
+        <div
+          className="lg:hidden fixed top-0 right-0 w-screen h-screen flex flex-col justify-center items-center py-11 z-40"
+          style={{
+            backgroundColor: "var(--bg-clr)",
+            color: "var(--clr-mode-text)",
+          }}
+        >
           <ul className="text-2xl tracking-wider font-bold flex flex-col justify-center items-center w-full h-full gap-7">
             <a onClick={handleNav} href="#skills">
               <li>Skills</li>
@@ -65,7 +68,12 @@ function Header() {
             <a onClick={handleNav} href="#contact">
               <li>Contact</li>
             </a>
-            <a>
+            <a
+              href="https://drive.google.com/file/d/1Dg9xZm28TXXNxcEM22jiMIgTn6gn-wUX/view?usp=sharing"
+              onClick={handleNav}
+              target="_blank"
+              rel="noreferrer"
+            >
               <li>Resume</li>
             </a>
           </ul>
@@ -84,16 +92,15 @@ function Header() {
             <Li title={"Contact"} />
           </a>
           <Li title={"Resume"} />
-          
         </nav>
       </div>
 
       <button
-            aria-label="theme"
-            onClick={handleTheme}
-            className="cursor-pointer absolute right-16 text-2xl text-sky-400 hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md lg:right-11"
-          >
-            {theme === "light" ? <BsMoonStarsFill /> : <BsSunFill />}
+        aria-label="theme"
+        onClick={handleTheme}
+        className="cursor-pointer absolute right-16 text-2xl text-sky-400 hover:bg-sky-500 p-2 rounded-full hover:transition-all hover:duration-300 hover:text-white hover:shadow-zinc-700 hover:shadow-md lg:right-11"
+      >
+        {theme === "light" ? <BsMoonStarsFill /> : <BsSunFill />}
       </button>
     </header>
   );
