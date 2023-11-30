@@ -47,6 +47,23 @@ function Projects() {
           gitUrl={"https://github.com/Sohel-786/LMS"}
           responsive= {true}
         />
+
+        <ProjectCard
+          title={"Pokedex"}
+          desc={"Clone of pokedex from www.pokemon.com"}
+          url={"https://github.com/Sohel-786/pokedex/blob/main/public/githubReadme/homePage.png?raw=true"}
+          tools={[react, redux, tailwind]}
+          points={[
+            "Debouncing effect on the search box.",
+            "Advance Search available Depend on Ability, Height, Weight, Type, Weakness and sub-string of Pokemon Name and Between pokedex-number Range.",
+            "Pokemon Details Page with all varieties, stats, evolution chain and other characteristics of selected Pokemon.",
+            "Auto-suggest of Pokemons on the Pokedex page and a pagination like functionality",
+          ]}
+          alt={"pokedex"}
+          liveUrl={"https://react-project-pokedex.netlify.app"}
+          gitUrl={"https://github.com/Sohel-786/pokedex"}
+          responsive= {false}
+        />
       </div>
     </section>
   );
