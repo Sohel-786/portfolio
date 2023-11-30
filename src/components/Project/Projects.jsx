@@ -52,7 +52,7 @@ function Projects() {
           title={"Pokedex"}
           desc={"Pokedex clone from www.pokemon.com"}
           url={"https://github.com/Sohel-786/pokedex/blob/main/public/githubReadme/homePage.png?raw=true"}
-          tools={[react, redux, tailwind]}
+          tools={[react, redux, node, tailwind]}
           points={[
             "Debouncing effect on the search box.",
             "Advance Search available Depend on Ability, Height, Weight, Type, Weakness and sub-string of Pokemon Name and Between pokedex-number Range.",
