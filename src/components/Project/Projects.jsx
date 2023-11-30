@@ -50,7 +50,7 @@ function Projects() {
 
         <ProjectCard
           title={"Pokedex"}
-          desc={"Clone of pokedex from www.pokemon.com"}
+          desc={"Pokedex clone from www.pokemon.com"}
           url={"https://github.com/Sohel-786/pokedex/blob/main/public/githubReadme/homePage.png?raw=true"}
           tools={[react, redux, tailwind]}
           points={[
