@@ -4,7 +4,7 @@ import { FaHandPeace } from "react-icons/fa6";
 import { ThemeContext } from "../../Context/ThemeContext";
 
 function Projects() {
-  const {theme} = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   const js = "javascript";
   const html = "html-5";
@@ -21,18 +21,23 @@ function Projects() {
       id="projects"
       className="flex w-full flex-col my-16 mb-0 justify-center items-center px-5 lg:px-10"
     >
-      <div data-aos="zoom-out-up" className="text-2xl font-bold font-sans leading-9 tracking-wide text-sky-400 flex justify-center items-center my-4 mb-7 gap-4 lg:gap-6 lg:mb-11 lg:my-6 lg:text-5xl">
-        <h1 >
-          Built By Me
-        </h1>
-        <div id={theme === 'dark' ? 'dark' : 'light'} className="text-blue-500"><FaHandPeace /></div>
+      <div
+        data-aos="zoom-out-up"
+        className="text-2xl font-bold font-sans leading-9 tracking-wide text-sky-400 flex justify-center items-center my-4 mb-7 gap-4 lg:gap-6 lg:mb-11 lg:my-6 lg:text-5xl"
+      >
+        <h1>Built By Me</h1>
+        <div id={theme === "dark" ? "dark" : "light"} className="text-blue-500">
+          <FaHandPeace />
+        </div>
       </div>
 
       <div className="flex flex-col w-full gap-9 justify-center items-center lg:gap-5">
         <ProjectCard
           title={"Classroom"}
           desc={"Learning Management System"}
-          url={"https://github.com/Sohel-786/LMS/raw/main/client/public/githubReadme/homepage.png"}
+          url={
+            "https://github.com/Sohel-786/LMS/raw/main/client/public/githubReadme/homepage.png"
+          }
           tools={[react, redux, ex, mongo, node, tailwind]}
           points={[
             "SignUp and Login, Authentication with JWT and Authorization using custom Middleware.",
@@ -45,13 +50,15 @@ function Projects() {
           alt={"classroom"}
           liveUrl={"https://classroom-react.netlify.app"}
           gitUrl={"https://github.com/Sohel-786/LMS"}
-          responsive= {true}
+          responsive={true}
         />
 
         <ProjectCard
           title={"My Store"}
           desc={"Ecommerce Web Application"}
-          url={"https://github.com/Sohel-786/myStore/blob/main/client/public/githubReadme/landingPage.png"}
+          url={
+            "https://github.com/Sohel-786/myStore/blob/main/client/public/githubReadme/landingPage.png"
+          }
           tools={[react, redux, ex, mongo, node, tailwind]}
           points={[
             "User can Login/SignUp/Logout, Authentication & Authorization",
@@ -67,13 +74,15 @@ function Projects() {
           alt={"My Store"}
           liveUrl={"https://mystore-app-react.netlify.app/"}
           gitUrl={"https://github.com/Sohel-786/myStore"}
-          responsive= {false}
+          responsive={false}
         />
 
         <ProjectCard
           title={"Pokedex"}
           desc={"Pokedex clone from www.pokemon.com"}
-          url={"https://github.com/Sohel-786/pokedex/blob/main/public/githubReadme/homePage.png?raw=true"}
+          url={
+            "https://github.com/Sohel-786/pokedex/blob/main/public/githubReadme/homePage.png?raw=true"
+          }
           tools={[react, redux, node, tailwind]}
           points={[
             "Debouncing effect on the search box.",
@@ -84,7 +93,7 @@ function Projects() {
           alt={"pokedex"}
           liveUrl={"https://react-project-pokedex.netlify.app"}
           gitUrl={"https://github.com/Sohel-786/pokedex"}
-          responsive= {false}
+          responsive={false}
         />
       </div>
     </section>
