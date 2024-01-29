@@ -1,8 +1,8 @@
 import { nanoid } from "nanoid";
 import Button from "./Button";
 import { IoMdArrowDropright } from "react-icons/io";
-import { BsDot } from 'react-icons/bs';
-import { DiResponsive } from 'react-icons/di';
+import { BsDot } from "react-icons/bs";
+import { DiResponsive } from "react-icons/di";
 
 function ProjectCard({
   url,
@@ -13,7 +13,7 @@ function ProjectCard({
   tools,
   liveUrl,
   gitUrl,
-  responsive
+  responsive,
 }) {
   return (
     <section
@@ -65,22 +65,23 @@ function ProjectCard({
             color: "var(--clr-mode-text)",
           }}
         >
-          {"(" + desc + ")"} <span className={`${responsive ? "text-[#19cd19]" : "text-[#ff1c1c]" } font-bold text-base ml-1 flex tracking-wide`}><BsDot /> { responsive ? 'Responsive' : 'Not Responsive' }</span>
+          {"(" + desc + ")"}{" "}
+          <span
+            className={`${
+              responsive ? "text-[#19cd19]" : "text-[#ff1c1c]"
+            } font-bold text-base ml-1 flex tracking-wide`}
+          >
+            <BsDot /> {responsive ? "Responsive" : "Not Responsive"}
+          </span>
         </p>
         <ul className="flex h-[50%] md:h-[40%] lg:h-[60%] overflow-y-auto scroll scroll-smooth flex-col my-2 gap-3 lg:my-8 lg:gap-5">
           {points.map((el) => {
             return (
               <li className="flex gap-1 lg:gap-2" key={nanoid()}>
-                <div
-                  className="text-xs p-0.5 text-sky-500 lg:text-xl lg:pt-1"
-                >
+                <div className="text-xs p-0.5 text-sky-500 lg:text-xl lg:pt-1">
                   <IoMdArrowDropright />
                 </div>
-                <p
-                  className="text-xs font-bold font-mono lg:text-xl"
-                >
-                  {el}
-                </p>
+                <p className="text-xs font-bold font-mono lg:text-xl">{el}</p>
               </li>
             );
           })}

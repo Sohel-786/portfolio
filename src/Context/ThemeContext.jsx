@@ -14,6 +14,6 @@ const ContextProvider = ({ children }) => {
       {children}
     </ThemeContext.Provider>
   );
-}
+};
 
-export { ThemeContext , ContextProvider };
+export { ThemeContext, ContextProvider };

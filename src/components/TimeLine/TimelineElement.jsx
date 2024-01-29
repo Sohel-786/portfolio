@@ -1,6 +1,6 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
-function TimelineElement({h3,h4,p,d,children, pos}) {
+function TimelineElement({ h3, h4, p, d, children, pos }) {
   return (
     <VerticalTimelineElement
       date={d}
@@ -25,7 +25,10 @@ function TimelineElement({h3,h4,p,d,children, pos}) {
       >
         {h3}
       </h3>
-      <h4 className="vertical-timeline-element-subtitle text-sm font-mono font-bold lg:text-base" data-aos="fade-right">
+      <h4
+        className="vertical-timeline-element-subtitle text-sm font-mono font-bold lg:text-base"
+        data-aos="fade-right"
+      >
         {h4}
       </h4>
       <p className="tracking-wide" data-aos="fade-right">

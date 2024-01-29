@@ -4,9 +4,21 @@ import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { ThemeContext } from "../../Context/ThemeContext";
 
 function Github() {
-  const colourThemeLight = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+  const colourThemeLight = [
+    "#ebedf0",
+    "#9be9a8",
+    "#40c463",
+    "#30a14e",
+    "#216e39",
+  ];
 
-  const colourThemeDark = ["#06150d", "#0e4429", "#006d32", "#26a641", "#39d353"];
+  const colourThemeDark = [
+    "#06150d",
+    "#0e4429",
+    "#006d32",
+    "#26a641",
+    "#39d353",
+  ];
 
   const { theme } = useContext(ThemeContext);
   const id = theme === "dark" ? "dark" : "light";
@@ -19,7 +31,10 @@ function Github() {
       }}
     >
       <div className="flex justify-center items-center gap-4 lg:gap-7">
-        <h1 data-aos="fade-right" className=" font-sans font-bold text-2xl lg:text-4xl">
+        <h1
+          data-aos="fade-right"
+          className=" font-sans font-bold text-2xl lg:text-4xl"
+        >
           <span id={id}>D</span>ays I <span id={id}>C</span>ode
         </h1>
         <div data-aos="zoom-in-down" id={id} className="text-4xl lg:text-6xl">
@@ -38,7 +53,9 @@ function Github() {
           fontSize={13}
           blockSize={15}
           blockMargin={5}
-          theme={{ light: theme === 'light' ? colourThemeLight : colourThemeDark}}
+          theme={{
+            light: theme === "light" ? colourThemeLight : colourThemeDark,
+          }}
         />
       </div>
     </section>
