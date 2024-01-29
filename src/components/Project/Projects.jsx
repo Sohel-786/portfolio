@@ -57,7 +57,7 @@ function Projects() {
           title={"My Store"}
           desc={"Ecommerce Web Application"}
           url={
-            "https://github.com/Sohel-786/myStore/blob/main/client/public/githubReadme/landingPage.png"
+            "https://github.com/Sohel-786/myStore/blob/main/client/public/githubReadme/landingPage.png?raw=true"
           }
           tools={[react, redux, ex, mongo, node, tailwind]}
           points={[
