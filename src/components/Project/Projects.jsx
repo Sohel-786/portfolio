@@ -49,6 +49,28 @@ function Projects() {
         />
 
         <ProjectCard
+          title={"My Store"}
+          desc={"Ecommerce Web Application"}
+          url={"https://github.com/Sohel-786/myStore/blob/main/client/public/githubReadme/landingPage.png"}
+          tools={[react, redux, ex, mongo, node, tailwind]}
+          points={[
+            "User can Login/SignUp/Logout, Authentication & Authorization",
+            "Create and edit profile, and add, update, delete addresses",
+            "view orders which are in process",
+            "add, remove products in bag and in wishlist to buy it later",
+            "Filter products through brand, price and discount",
+            "Change and reset password",
+            "Admin can Add/Update/Delete Products",
+            "Admin can view Orders and details of any order which are InProcess and Orders which are Delivered",
+            "Admin can update the status of an order from InProcess to Delivered",
+          ]}
+          alt={"My Store"}
+          liveUrl={"https://mystore-app-react.netlify.app/"}
+          gitUrl={"https://github.com/Sohel-786/myStore"}
+          responsive= {false}
+        />
+
+        <ProjectCard
           title={"Pokedex"}
           desc={"Pokedex clone from www.pokemon.com"}
           url={"https://github.com/Sohel-786/pokedex/blob/main/public/githubReadme/homePage.png?raw=true"}
