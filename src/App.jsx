@@ -24,7 +24,7 @@ function App() {
       console.log('request ran');
      axios.get('https://classroombackend.onrender.com/ping');
      axios.get('https://mystore-vfu6.onrender.com/ping');
-    }, 1000)
+    }, 15 * 60 * 1000)
 
     return () => { clearInterval(id) }
   }, [])
