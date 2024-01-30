@@ -22,12 +22,16 @@ function App() {
   useEffect(() => {
     const id = setInterval(() => {
       console.log('request ran');
-     axios.get('https://classroombackend.onrender.com/ping');
-     axios.get('https://mystore-vfu6.onrender.com/ping');
+      runOnce();
     }, 15 * 60 * 1000)
 
     return () => { clearInterval(id) }
   }, [])
+
+  async function runOnce(){
+   await axios.get('https://classroombackend.onrender.com/ping');
+   await axios.get('https://mystore-vfu6.onrender.com/ping');
+  }
 
   return (
     <section
