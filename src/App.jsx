@@ -21,6 +21,7 @@ function App() {
 
   useEffect(() => {
     const id = setInterval(() => {
+      console.log('request ran');
      axios.get('https://classroombackend.onrender.com/ping');
      axios.get('https://mystore-vfu6.onrender.com/ping');
     }, 15 * 60 * 1000)
