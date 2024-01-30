@@ -10,6 +10,7 @@ const Contact = React.lazy(() => import("./components/Contact/Contact"));
 const ScrollToTop = React.lazy(() => import("./components/Scroll/ScrollToTop"));
 const Home = React.lazy(() => import("./components/Home/Home"));
 import { ThemeContext } from "./Context/ThemeContext";
+import axios from "axios";
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -17,6 +18,15 @@ function App() {
   useEffect(() => {
     Aos.init({ duration: 1350 });
   }, []);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+     axios.get('https://classroombackend.onrender.com/ping');
+     axios.get('https://mystore-vfu6.onrender.com/ping');
+    }, 15 * 1000)
+
+    return () => { clearInterval(id) }
+  }, [])
 
   return (
     <section
