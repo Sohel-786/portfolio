@@ -23,7 +23,7 @@ function App() {
     const id = setInterval(() => {
      axios.get('https://classroombackend.onrender.com/ping');
      axios.get('https://mystore-vfu6.onrender.com/ping');
-    }, 15 * 1000)
+    }, 15 * 60 * 1000)
 
     return () => { clearInterval(id) }
   }, [])
