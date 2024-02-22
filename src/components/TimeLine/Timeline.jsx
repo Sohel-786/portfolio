@@ -42,7 +42,7 @@ function Timeline() {
           p={
             "Joined the One Stop Tech Solution to learn Full Stack Web Development (MERN Stack). Also learned many soft skills in the process."
           }
-          h3={"Student"}
+          h3={"Apprenticeship"}
           h4={"PW Skills (Remote)"}
           d={"January 2023 - October 2023"}
           pos={"left"}
