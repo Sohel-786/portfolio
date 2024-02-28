@@ -57,7 +57,7 @@ function Projects() {
           title={"My Store"}
           desc={"Ecommerce Web Application"}
           url={
-            "https://github.com/Sohel-786/myStore/blob/main/client/public/githubReadme/landingPage.png?raw=true"
+            "https://res.cloudinary.com/da3zef4f0/image/upload/v1709138596/lms/landingPage_bts5av.png"
           }
           tools={[react, redux, ex, mongo, node, tailwind]}
           points={[
@@ -81,7 +81,7 @@ function Projects() {
           title={"Pokedex"}
           desc={"Pokedex clone from www.pokemon.com"}
           url={
-            "https://github.com/Sohel-786/pokedex/blob/main/public/githubReadme/homePage.png?raw=true"
+            "https://res.cloudinary.com/da3zef4f0/image/upload/v1709138595/lms/homePage_1_avbf7u.png"
           }
           tools={[react, redux, node, tailwind]}
           points={[
