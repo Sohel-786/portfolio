@@ -92,7 +92,7 @@ function Header() {
             <Li title={"Contact"} />
           </a>
           <a
-            href="https://drive.google.com/file/d/1iXpZYw9mKZapJlgIWhidugexAD-ai1lY/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ppqNN6yrJrWYd2IrhFvotmiBgd5M4do9/view?usp=sharing"
             onClick={handleNav}
             target="_blank"
             rel="noreferrer"
