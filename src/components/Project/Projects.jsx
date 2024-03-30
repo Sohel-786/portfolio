@@ -31,6 +31,18 @@ function Projects() {
         </div>
       </div>
 
+      <div
+        className="mb-7 font-mono font-bold text-center text-lg"
+        style={{
+          color: "var(--clr-mode-text)",
+        }}
+      >
+        <h1>
+          Projects are deployed on free web service, and free instance will spin
+          down with inactivity if not used, which can delay requests by 50
+          seconds or more. So please wait once for a while if it takes time.
+        </h1>
+      </div>
       <div className="flex flex-col w-full gap-9 justify-center items-center lg:gap-5">
         <ProjectCard
           title={"Classroom"}

@@ -47,6 +47,14 @@
   color : rgb(46, 255, 23)
 }
 
+#light::before{
+  background-color : rgb(37, 99, 235);
+}
+
+#dark::before{
+  background-color : rgb(46, 255, 23)
+}
+
 #techstack:hover{
   color: var(--clr-mode);
 }
