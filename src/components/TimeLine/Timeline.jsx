@@ -42,19 +42,7 @@ function Timeline() {
           p={`Developing user-facing features using React.js, ensuring appealing and responsive user interfaces.Building efficient and scalable server-side systems using Node.js and Express.js. Integrating front-end components with server-side logic, ensuring seamless communication between the two.Implementing data storage solutions using MongoDB and other relevant technologies.`}
           h3={"MERN Stack Developer"}
           h4={"Freelance (Self employed)"}
-          d={"October 2023 - Present"}
-          pos={"right"}
-        >
-          <MdOutlineWork />
-        </TimelineElement>
-
-        <TimelineElement
-          p={
-            "Joined the One Stop Tech Solution to learn Full Stack Web Development (MERN Stack). Also learned many soft skills in the process."
-          }
-          h3={"MERN Stack Developer"}
-          h4={"PW Skills (Apprenticeship)"}
-          d={"January 2023 - October 2023"}
+          d={"December 2022 - Present"}
           pos={"left"}
         >
           <MdOutlineWork />
