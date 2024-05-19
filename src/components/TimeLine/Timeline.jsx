@@ -42,7 +42,7 @@ function Timeline() {
           p={`Developing user-facing features using React.js, ensuring appealing and responsive user interfaces.Building efficient and scalable server-side systems using Node.js and Express.js. Integrating front-end components with server-side logic, ensuring seamless communication between the two.Implementing data storage solutions using MongoDB and other relevant technologies.`}
           h3={"MERN Stack Developer"}
           h4={"Freelance (Self employed)"}
-          d={"December 2022 - Present"}
+          d={"October 2023 - Present"}
           pos={"left"}
         >
           <MdOutlineWork />
