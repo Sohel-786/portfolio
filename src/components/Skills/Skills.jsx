@@ -53,10 +53,10 @@ function Skills() {
         <Tools url={`https://cdn.simpleicons.org/git`} title={"Git"} fade={"fade-down-right"} />
         <Tools url={`https://cdn.simpleicons.org/github`} title={"GitHub"} fade={"fade-up"} />
         <Tools url={`https://cdn.simpleicons.org/docker`} title={"Docker"} fade={"fade-left"} />
-        <Tools url={`https://cdn.simpleicons.org/amazonwebservices`} title={"AWS (ECR, ECS)"} fade={"fade-down"} />
+        <Tools url={`https://cdn.simpleicons.org/amazonaws`} title={"AWS (ECR, ECS)"} fade={"fade-down"} />
         <Tools url={`https://cdn.simpleicons.org/n8n`} title={"n8n"} fade={"fade-right"} />
         <Tools url={`https://cdn.simpleicons.org/prisma`} title={"Prisma"} fade={"fade-up"} />
-        <Tools url={`/assets/icons/api.svg`} title={"REST APIs"} fade={"fade-left"} /> {/* Placeholder */}
+        <Tools url={`https://cdn.simpleicons.org/openapiinitiative`} title={"REST APIs"} fade={"fade-left"} />
 
       </div>
     </section>
