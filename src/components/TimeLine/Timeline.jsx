@@ -38,42 +38,55 @@ function Timeline() {
         💫
       </h1>
       <VerticalTimeline lineColor={theme === "light" ? "black" : "white"}>
+        {/* Empiric Infotech */}
         <TimelineElement
-          p={`Developing user-facing features using React.js, ensuring appealing and responsive user interfaces.Building efficient and scalable server-side systems using Node.js and Express.js. Integrating front-end components with server-side logic, ensuring seamless communication between the two.Implementing data storage solutions using MongoDB and other relevant technologies.`}
+          p={`Developed and maintained full-stack applications using React.js, Node.js, Express.js, MongoDB, PostgreSQL, MySQL, Next.js, and Electron.js. Implemented reusable front-end components, optimized state management with Redux, and ensured seamless integration of client and server-side logic.`}
           h3={"MERN Stack Developer"}
-          h4={"Freelance (Self employed)"}
-          d={"October 2023 - Present"}
+          h4={"Empiric Infotech"}
+          d={"June 2024 – September 2025"}
           pos={"left"}
         >
           <MdOutlineWork />
         </TimelineElement>
 
+        {/* Freelance */}
         <TimelineElement
-          p={
-            "Determinig and overseeing consistent testing, evaluation, and troubleshooting of software in all stages of completion. Implementer & training provider, Runtime mistakes and problems Solver, Assess management and user's need and provide them with software solutions."
-          }
-          h3={"Software Project Coordinator"}
-          h4={"Aira Euro Automation Private Limited"}
-          d={"March 2019 - November 2022"}
+          p={`Delivered multiple MERN-based applications for international clients. Built authentication systems, dashboards, and payment integrations while managing communication, requirements, and code delivery independently.`}
+          h3={"Freelance MERN Stack Developer"}
+          h4={"Self Employed"}
+          d={"January 2024 – June 2024"}
           pos={"right"}
         >
           <MdOutlineWork />
         </TimelineElement>
 
+        {/* Project Coordinator */}
         <TimelineElement
-          h3={"Diploma In Information Technology"}
-          p={"R. C. Technical Institute, Ahmedabad, Gujarat"}
-          d={"August 2015 - July 2018"}
+          p={`Coordinated end-to-end execution of software projects, ensuring timely delivery and quality. Reduced delays by streamlining communication and strengthened skills in project delivery, requirement analysis, and team management.`}
+          h3={"Software Project Coordinator"}
+          h4={"Aira Euro Automation Pvt. Ltd."}
+          d={"March 2019 – November 2022"}
           pos={"left"}
+        >
+          <MdOutlineWork />
+        </TimelineElement>
+
+        {/* Diploma */}
+        <TimelineElement
+          h3={"Diploma in Information Technology"}
+          p={"R.C. Technical Institute, Ahmedabad, Gujarat"}
+          d={"2015 – 2018"}
+          pos={"right"}
         >
           <MdSchool />
         </TimelineElement>
 
+        {/* Secondary School */}
         <TimelineElement
           h3={"Completed Secondary School"}
           p={"Pragati School, Maninagar, Ahmedabad, Gujarat"}
           d={"March 2015"}
-          pos={"right"}
+          pos={"left"}
         >
           <MdOutlineSchool />
         </TimelineElement>
@@ -84,7 +97,7 @@ function Timeline() {
             backgroundColor: `var(--bg-clr)`,
             color: `var(--clr-mode)`,
           }}
-        ></VerticalTimelineElement>
+        />
       </VerticalTimeline>
     </section>
   );
