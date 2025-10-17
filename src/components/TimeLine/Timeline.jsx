@@ -63,7 +63,7 @@ function Timeline() {
         {/* Project Coordinator */}
         <TimelineElement
           p={`Coordinated end-to-end execution of software projects, ensuring timely delivery and quality. Reduced delays by streamlining communication and strengthened skills in project delivery, requirement analysis, and team management.`}
-          h3={"Software Project Coordinator"}
+          h3={"Business Analyst"}
           h4={"Aira Euro Automation Pvt. Ltd."}
           d={"March 2019 – January 2023"}
           pos={"left"}
