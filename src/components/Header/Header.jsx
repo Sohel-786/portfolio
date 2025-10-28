@@ -69,7 +69,7 @@ function Header() {
               <li>Contact</li>
             </a>
             <a
-              href="https://drive.google.com/file/d/1B0aKShaLmlhlnRxSCR3rYJH4d34NWv6D/view?usp=sharing"
+              href="https://drive.google.com/file/d/1NMXgnDv3zIb-_OPxzR4Ck_pBzUdjXv0d/view?usp=sharing"
               onClick={handleNav}
               target="_blank"
               rel="noreferrer"
@@ -92,7 +92,7 @@ function Header() {
             <Li title={"Contact"} />
           </a>
           <a
-            href="https://drive.google.com/file/d/1B0aKShaLmlhlnRxSCR3rYJH4d34NWv6D/view?usp=sharing"
+            href="https://drive.google.com/file/d/1NMXgnDv3zIb-_OPxzR4Ck_pBzUdjXv0d/view?usp=sharing"
             onClick={handleNav}
             target="_blank"
             rel="noreferrer"
