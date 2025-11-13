@@ -64,7 +64,7 @@ function Timeline() {
         <TimelineElement
           p={`Built multiple practice and real-client web applications using React, Node.js, and MongoDB. Gained hands-on experience in RESTful APIs, authentication, and project deployment workflows.`}
           h3={"MERN Stack Intern"}
-          h4={"Self Employed"}
+          h4={"PW Skills"}
           d={"January 2023 – Oct 2023"}
           pos={"left"}
         >
