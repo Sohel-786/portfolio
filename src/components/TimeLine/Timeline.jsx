@@ -60,13 +60,24 @@ function Timeline() {
           <MdOutlineWork />
         </TimelineElement>
 
+          {/* MERN Stack Intern */}
+        <TimelineElement
+          p={`Built multiple practice and real-client web applications using React, Node.js, and MongoDB. Gained hands-on experience in RESTful APIs, authentication, and project deployment workflows.`}
+          h3={"MERN Stack Intern"}
+          h4={"Self Employed"}
+          d={"January 2023 – Oct 2023"}
+          pos={"left"}
+        >
+          <MdOutlineWork />
+        </TimelineElement>
+
         {/* Project Coordinator */}
         <TimelineElement
           p={`Coordinated end-to-end execution of software projects, ensuring timely delivery and quality. Reduced delays by streamlining communication and strengthened skills in project delivery, requirement analysis, and team management.`}
           h3={"Business Analyst"}
           h4={"Aira Euro Automation Pvt. Ltd."}
           d={"March 2019 – January 2023"}
-          pos={"left"}
+          pos={"right"}
         >
           <MdOutlineWork />
         </TimelineElement>
@@ -76,7 +87,7 @@ function Timeline() {
           h3={"Diploma in Information Technology"}
           p={"R.C. Technical Institute, Ahmedabad, Gujarat"}
           d={"2015 – 2018"}
-          pos={"right"}
+          pos={"left"}
         >
           <MdSchool />
         </TimelineElement>
@@ -86,7 +97,7 @@ function Timeline() {
           h3={"Completed Secondary School"}
           p={"Pragati School, Maninagar, Ahmedabad, Gujarat"}
           d={"March 2015"}
-          pos={"left"}
+          pos={"right"}
         >
           <MdOutlineSchool />
         </TimelineElement>
