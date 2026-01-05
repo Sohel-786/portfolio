@@ -1,82 +1,172 @@
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { BiSolidPhoneCall } from "react-icons/bi";
-import { GrMail } from "react-icons/gr";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdMail, MdPhone, MdLocationOn } from "react-icons/md";
 import ContactIcon from "./ContactIcon";
-import { FaSmileBeam } from "react-icons/fa";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+const contactLinks = [
+  {
+    icon: <FaGithub />,
+    label: "GitHub",
+    url: "https://github.com/Sohel-786",
+    text: "github.com/Sohel-786",
+  },
+  {
+    icon: <FaLinkedin />,
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/sohel-shaikh-8ba7a9110/",
+    text: "linkedin.com/in/sohel-shaikh-8ba7a9110",
+  },
+  {
+    icon: <MdMail />,
+    label: "Email",
+    url: "mailto:sohel.shaikh27100@gmail.com",
+    text: "sohel.shaikh27100@gmail.com",
+  },
+  {
+    icon: <MdPhone />,
+    label: "Phone",
+    url: "tel:+919664701106",
+    text: "+91 9664701106",
+  },
+  {
+    icon: <MdLocationOn />,
+    label: "Location",
+    url: "https://www.google.com/maps/place/Ahmedabad,+Gujarat/@23.0201581,72.414927,11z/data=!3m1!4b1!4m6!3m5!1s0x395e848aba5bd449:0x4fcedd11614f6516!8m2!3d23.022505!4d72.5713621!16zL20vMDFkODhj?entry=ttu",
+    text: "Ahmedabad, Gujarat, India",
+  },
+];
 
 function Contact() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
   return (
     <section
       id="contact"
-      className="px-5 flex flex-col items-center justify-center py-5 gap-5 pb-24 lg:pb-16 mt-6 lg:mt-11 lg:gap-16 lg:px-20"
+      ref={ref}
+      className="py-20 lg:py-32 px-5 lg:px-20 relative overflow-hidden"
+      style={{
+        backgroundColor: "var(--bg-clr-alt)",
+      }}
     >
-      <div
-        style={{
-          color: "var(--clr-mode-text)",
-        }}
-        data-aos="flip-up"
-        className="flex justify-center items-center text-2xl gap-2 font-sans font-bold lg:text-3xl lg:gap-5"
-      >
-        <h1>
-          Lets Work <span className="text-sky-500">Together</span>
-        </h1>
-        <div
-          style={{
-            color: "var(--nav-msg-clr)",
-          }}
-          className="text-3xl lg:text-4xl"
+      <div className="max-width mx-auto">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          className="max-w-4xl mx-auto"
         >
-          <FaSmileBeam />
-        </div>
+          {/* Header */}
+          <motion.div variants={itemVariants} className="text-center mb-16">
+            <h2
+              className="text-3xl lg:text-5xl font-bold mb-4"
+              style={{ color: "var(--clr-mode-text)" }}
+            >
+              Let's Work Together
+            </h2>
+            <div
+              className="w-24 h-1 mx-auto rounded-full mb-6"
+              style={{
+                background: "linear-gradient(90deg, var(--gradient-start), var(--gradient-end))",
+              }}
+            />
+            <p
+              className="text-lg lg:text-xl max-w-2xl mx-auto"
+              style={{ color: "var(--clr-mode-text-muted)" }}
+            >
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision. Let's connect!
+            </p>
+          </motion.div>
+
+          {/* Contact Cards */}
+          <motion.div
+            variants={itemVariants}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+          >
+            {contactLinks.map((link, index) => (
+              <ContactIcon
+                key={index}
+                icon={link.icon}
+                label={link.label}
+                url={link.url}
+                text={link.text}
+              />
+            ))}
+          </motion.div>
+
+          {/* CTA Section */}
+          <motion.div
+            variants={itemVariants}
+            className="text-center space-y-6 pt-8"
+          >
+            <motion.div
+              className="inline-block p-8 rounded-2xl"
+              style={{
+                backgroundColor: "var(--card-bg)",
+                boxShadow: "var(--shadow-lg)",
+                border: `1px solid var(--border-clr)`,
+              }}
+              whileHover={{ scale: 1.02, y: -5 }}
+              transition={{ duration: 0.2 }}
+            >
+              <h3
+                className="text-xl lg:text-2xl font-bold mb-4"
+                style={{ color: "var(--clr-mode-text)" }}
+              >
+                Ready to start a project?
+              </h3>
+              <p
+                className="text-base mb-6"
+                style={{ color: "var(--clr-mode-text-muted)" }}
+              >
+                Drop me a line and let's discuss how we can work together.
+              </p>
+              <motion.a
+                href="mailto:sohel.shaikh27100@gmail.com"
+                className="inline-block px-8 py-3 rounded-lg font-semibold text-white transition-all duration-300"
+                style={{
+                  background: "linear-gradient(135deg, var(--gradient-start), var(--gradient-end))",
+                }}
+                whileHover={{ scale: 1.05, boxShadow: "var(--shadow-lg)" }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Get In Touch
+              </motion.a>
+            </motion.div>
+
+            <p
+              className="text-sm"
+              style={{ color: "var(--clr-mode-text-muted)" }}
+            >
+              © {new Date().getFullYear()} Sohel Shaikh. All rights reserved.
+            </p>
+          </motion.div>
+        </motion.div>
       </div>
-
-      <section className="flex p-3 w-full flex-col gap-5 md:justify-center md:gap-4 md:flex-row items-center lg:gap-20 lg:flex-row lg:p-0">
-        <div
-          data-aos="zoom-in-down"
-          data-aos-duration="1500"
-          className="w-44 h-36 flex justify-center items-center overflow-hidden lg:w-72 lg:h-72"
-        >
-          <img
-            className="animate-[spin_15s_linear_infinite] w-10/12 h-auto aspect-square rounded-full"
-            src="/assets/earth.svg"
-            alt="contact"
-          />
-        </div>
-
-        <div className="flex flex-col gap-2 lg:gap-4 h-full">
-          <ContactIcon
-            url={"https://github.com/Sohel-786"}
-            text={"https://github.com/Sohel-786"}
-            lable="git"
-          >
-            <FaGithubSquare />
-          </ContactIcon>
-
-          <ContactIcon
-            url={"https://www.linkedin.com/in/sohel-shaikh-8ba7a9110/"}
-            text={"https://www.linkedin.com/in/sohel-shaikh-8ba7a9110/"}
-            lable="linkedin"
-          >
-            <FaLinkedin />
-          </ContactIcon>
-
-          <ContactIcon
-            url={"mailto:sohel.shaikh27100@gmail.com"}
-            text={"sohel.shaikh27100@gmail.com"}
-            lable="mail"
-          >
-            <GrMail />
-          </ContactIcon>
-
-          <ContactIcon
-            url={"tel:+919664701106"}
-            text={"+919664701106"}
-            lable="phone"
-          >
-            <BiSolidPhoneCall />
-          </ContactIcon>
-        </div>
-      </section>
     </section>
   );
 }

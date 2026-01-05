@@ -1,20 +1,38 @@
+import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "../../Context/ThemeContext";
 
-function Icon({ lable, url, element, duration }) {
+function Icon({ url, element, label }) {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <li
-      id={theme === "dark" ? "dark" : ""}
-      data-aos="fade-up"
-      data-aos-duration={duration}
-      className="text-blue-500 text-4xl my-7 sm:my-0 sm:text-3xl hover:text-blue-700 pb-2 relative before:absolute before:h-0.5 before:w-0 before:bottom-0 before:bg-blue-500 hover:before:w-full focus:before:w-full hover:before:transition-[width] hover:before:duration-300 before:ease-in before:duration-300 before:rounded-sm"
+    <motion.li
+      className="relative"
+      whileHover={{ scale: 1.1, y: -2 }}
+      whileTap={{ scale: 0.95 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
     >
-      <a href={url} aria-label={lable} target="_blank" rel="noreferrer">
-        {element}
+      <a
+        href={url}
+        aria-label={label}
+        target="_blank"
+        rel="noreferrer"
+        className="block text-2xl lg:text-3xl transition-colors duration-300 relative group"
+        style={{
+          color: "var(--clr-mode)",
+        }}
+      >
+        <span className="relative z-10">{element}</span>
+        <span
+          className="absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full"
+          style={{
+            backgroundColor: "var(--clr-mode)",
+          }}
+        />
       </a>
-    </li>
+    </motion.li>
   );
 }
 

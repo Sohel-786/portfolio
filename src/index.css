@@ -2,64 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    @apply antialiased;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
 .light {
-  --shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  --card-bg-left: #f2f6ff;
-  --card-bg-right: #ecfeff;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --card-bg: #ffffff;
+  --card-bg-alt: #f8fafc;
   --nav-msg-clr: rgb(14, 165, 233);
   --clr-mode: rgb(59, 130, 246);
-  --clr-mode-text: rgb(0, 0, 0);
-  --shadow-tools: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  --clr-mode-text: rgb(15, 23, 42);
+  --clr-mode-text-muted: rgb(100, 116, 139);
+  --shadow-tools: rgba(59, 130, 246, 0.1) 0px 4px 12px;
   --bg-clr: #ffffff;
-  --project-points: #494949;
-  --project-points-scroll: rgb(128, 255, 246);
+  --bg-clr-alt: #f8fafc;
+  --project-points: #475569;
+  --border-clr: rgba(226, 232, 240, 0.8);
+  --gradient-start: #3b82f6;
+  --gradient-end: #06b6d4;
 }
 
 .dark {
-  --shadow: rgba(253, 253, 253, 0.12) 0px 2px 4px 0px,
-    rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
-  --card-bg-left: #0000007d;
-  --card-bg-right: #1a2222;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  --card-bg: #1e293b;
+  --card-bg-alt: #0f172a;
   --nav-msg-clr: rgb(56, 255, 242);
   --clr-mode: rgb(0, 255, 238);
-  --clr-mode-text: #ffffff;
-  --shadow-tools: rgb(0, 255, 238) 0px 5px 15px 0px;
-  --bg-clr: #181823;
-  --project-points: #b1b1b1;
-  --project-points-scroll: rgb(157, 195, 255);
-}
-
-#light {
-  color: rgb(37, 99, 235);
-}
-
-#dark {
-  color: rgb(0, 255, 238);
-}
-
-#light:hover {
-  color: rgb(86, 174, 255);
-}
-
-#dark:hover {
-  color: rgb(46, 255, 23);
-}
-
-#light::before {
-  background-color: rgb(37, 99, 235);
-}
-
-#dark::before {
-  background-color: rgb(46, 255, 23);
-}
-
-#techstack:hover {
-  color: var(--clr-mode);
-}
-
-html {
-  scroll-behavior: smooth;
+  --clr-mode-text: #f1f5f9;
+  --clr-mode-text-muted: #94a3b8;
+  --shadow-tools: rgba(0, 255, 238, 0.15) 0px 4px 12px;
+  --bg-clr: #0f172a;
+  --bg-clr-alt: #1e293b;
+  --project-points: #cbd5e1;
+  --border-clr: rgba(51, 65, 85, 0.8);
+  --gradient-start: #00ffee;
+  --gradient-end: #06b6d4;
 }
 
 .max-width {
@@ -67,15 +57,20 @@ html {
 }
 
 .scroll::-webkit-scrollbar {
-  width: 3px;
+  width: 6px;
 }
 
 .scroll::-webkit-scrollbar-thumb {
   background: var(--clr-mode);
   border-radius: 10px;
+  opacity: 0.6;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
 }
 
 .scroll::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--project-points-scroll);
+  background: var(--bg-clr-alt);
   border-radius: 10px;
 }

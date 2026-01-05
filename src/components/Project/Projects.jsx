@@ -1,112 +1,176 @@
-import { useContext } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import { FaHandPeace } from "react-icons/fa6";
-import { ThemeContext } from "../../Context/ThemeContext";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const projects = [
+  {
+    id: 1,
+    title: "Rapid Personal Loans",
+    description: "Mobile-first personal loan platform with seamless application experience",
+    longDescription:
+      "RapidPersonalLoans.com is a mobile-first personal loan site providing a seamless application experience. It features a user-friendly landing page, optimized web form, fast load times, and smooth navigation. The platform includes infinite scroll with lazy loading for better content access and high performance. A multi-step form guides users with real-time validation and autofill. The form is customizable using JSON configurations. By focusing on responsive design and SEO, RapidPersonalLoans.com delivers an engaging experience for personal loan seekers.",
+    image: "/assets/project/rapid_personal_loan.png",
+    liveUrl: "https://rapidpersonalloans.com/en",
+    gitUrl: null,
+    techStack: ["nextjs2", "typescript", "javascript", "html5", "css3", "tailwindcss"],
+    features: [
+      "Mobile-first responsive design",
+      "Multi-step form with real-time validation",
+      "Infinite scroll with lazy loading",
+      "JSON-configurable form system",
+      "SEO optimized",
+      "Fast load times and smooth navigation",
+    ],
+    responsive: true,
+  },
+  {
+    id: 2,
+    title: "Fenix Digitech",
+    description: "Modern IT solutions company portfolio website",
+    longDescription:
+      "Fenix Digitech is a modern IT solutions company delivering reliable web, mobile, and digital products designed to scale with your business goals. This is a portfolio website showcasing their services, solutions, and work process. The site features a clean, professional design with smooth animations and clear call-to-actions. Currently, only the desktop version is prepared, demonstrating modern web development practices and design principles.",
+    image: "/assets/project/fenix_digitech.png",
+    liveUrl: "https://fenixdigitech.vercel.app/",
+    gitUrl: null,
+    techStack: ["nextjs2", "typescript", "javascript", "html5", "css3", "tailwindcss"],
+    features: [
+      "Modern portfolio design",
+      "Service showcase",
+      "Smooth animations",
+      "Professional UI/UX",
+      "Desktop-first approach",
+    ],
+    responsive: false,
+  },
+  {
+    id: 3,
+    title: "Classroom",
+    description: "Learning Management System",
+    longDescription:
+      "A comprehensive Learning Management System built with MERN stack. Features user authentication, course subscription with payment gateway integration, lecture access management, ticket system for support, and a complete admin dashboard for course and user management.",
+    image:
+      "https://github.com/Sohel-786/LMS/raw/main/client/public/githubReadme/homepage.png",
+    liveUrl: "https://classroom-react.netlify.app",
+    gitUrl: "https://github.com/Sohel-786/LMS",
+    techStack: ["reactjs", "redux", "express", "mongodb", "nodejs", "tailwindcss"],
+    features: [
+      "SignUp and Login with JWT Authentication and Authorization",
+      "User profile management (Picture, Name, Password reset)",
+      "Course subscription through Payment Gateway",
+      "Lecture access after subscription",
+      "Ticket system for user support",
+      "Admin Dashboard with revenue tracking",
+      "Admin can Create/Update/Delete Courses and Lectures",
+    ],
+    responsive: true,
+  },
+  {
+    id: 4,
+    title: "My Store",
+    description: "Ecommerce Web Application",
+    longDescription:
+      "A full-featured ecommerce platform with user authentication, product management, shopping cart, wishlist, order tracking, and comprehensive admin panel for product and order management.",
+    image:
+      "https://res.cloudinary.com/da3zef4f0/image/upload/v1709138596/lms/landingPage_bts5av.png",
+    liveUrl: "https://mystore-app-react.netlify.app/",
+    gitUrl: "https://github.com/Sohel-786/myStore",
+    techStack: ["reactjs", "redux", "express", "mongodb", "nodejs", "tailwindcss"],
+    features: [
+      "User Login/SignUp/Logout with Authentication & Authorization",
+      "Profile management and address management",
+      "Shopping bag and wishlist functionality",
+      "Product filtering (brand, price, discount)",
+      "Order tracking and management",
+      "Admin product management (Add/Update/Delete)",
+      "Admin order status management",
+    ],
+    responsive: false,
+  },
+  {
+    id: 5,
+    title: "Pokedex",
+    description: "Pokedex clone from www.pokemon.com",
+    longDescription:
+      "A feature-rich Pokedex application with advanced search capabilities, detailed Pokemon information, evolution chains, and an intuitive user interface. Built with React and Redux for state management.",
+    image:
+      "https://res.cloudinary.com/da3zef4f0/image/upload/v1709138595/lms/homePage_1_avbf7u.png",
+    liveUrl: "https://react-project-pokedex.netlify.app",
+    gitUrl: "https://github.com/Sohel-786/pokedex",
+    techStack: ["reactjs", "redux", "nodejs", "tailwindcss"],
+    features: [
+      "Debouncing effect on search box",
+      "Advanced search (Ability, Height, Weight, Type, Weakness, Name, Pokedex number range)",
+      "Detailed Pokemon information page",
+      "Evolution chain visualization",
+      "Auto-suggest functionality",
+      "Pagination-like functionality",
+    ],
+    responsive: false,
+  },
+];
 
 function Projects() {
-  const { theme } = useContext(ThemeContext);
-
-  const js = "javascript";
-  const html = "html-5";
-  const css = "css3";
-  const ex = "express";
-  const mongo = "mongodb";
-  const node = "nodejs";
-  const react = "reactjs";
-  const redux = "redux";
-  const tailwind = "tailwindcss";
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section
       id="projects"
-      className="flex w-full flex-col my-16 mb-0 justify-center items-center px-5 lg:px-10"
+      ref={ref}
+      className="py-20 lg:py-32 px-5 lg:px-20"
+      style={{
+        backgroundColor: "var(--bg-clr-alt)",
+      }}
     >
-      <div
-        data-aos="zoom-out-up"
-        className="text-2xl font-bold font-sans leading-9 tracking-wide text-sky-400 flex justify-center items-center my-4 mb-7 gap-4 lg:gap-6 lg:mb-11 lg:my-6 lg:text-5xl"
-      >
-        <h1>Built By Me</h1>
-        <div id={theme === "dark" ? "dark" : "light"} className="text-blue-500">
-          <FaHandPeace />
-        </div>
-      </div>
+      <div className="max-width mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2
+            className="text-3xl lg:text-5xl font-bold mb-4"
+            style={{ color: "var(--clr-mode-text)" }}
+          >
+            Featured Projects
+          </h2>
+          <div
+            className="w-24 h-1 mx-auto rounded-full"
+            style={{
+              background: "linear-gradient(90deg, var(--gradient-start), var(--gradient-end))",
+            }}
+          />
+          <p
+            className="mt-6 text-lg max-w-2xl mx-auto"
+            style={{ color: "var(--clr-mode-text-muted)" }}
+          >
+            A collection of projects I've built, showcasing my skills in full-stack
+            development, UI/UX design, and modern web technologies.
+          </p>
+        </motion.div>
 
-      <div
-        className="mb-7 font-mono font-bold text-center text-lg"
-        style={{
-          color: "var(--clr-mode-text)",
-        }}
-      >
-        <h1>
-          Projects are deployed on free web service, and free instance will spin
-          down with inactivity if not used, which can delay requests by 50
-          seconds or more. So please wait once for a while if it takes time.
-        </h1>
-      </div>
-      <div className="flex flex-col w-full gap-9 justify-center items-center lg:gap-5">
-        <ProjectCard
-          title={"Classroom"}
-          desc={"Learning Management System"}
-          url={
-            "https://github.com/Sohel-786/LMS/raw/main/client/public/githubReadme/homepage.png"
-          }
-          tools={[react, redux, ex, mongo, node, tailwind]}
-          points={[
-            "SignUp and Login, Authentication with JWT and Authorization using custom Middleware.",
-            "User Can update profile (Picture, Name except Email), Change password or Get Email to reset password if forgotten.",
-            "User can subscribe for the course through Payment Gateway. Lectures access will be there after subscribtion.",
-            "User can raise a ticket to contact and will get a confirmation email.",
-            "Admin Dashboard, admin can view total of Registered and Subscribed User and total Revenue.",
-            "Admin can Create/Update/Delete Course. Admin can Delete/Add Lectures.",
-          ]}
-          alt={"classroom"}
-          liveUrl={"https://classroom-react.netlify.app"}
-          gitUrl={"https://github.com/Sohel-786/LMS"}
-          responsive={true}
-        />
-
-        <ProjectCard
-          title={"My Store"}
-          desc={"Ecommerce Web Application"}
-          url={
-            "https://res.cloudinary.com/da3zef4f0/image/upload/v1709138596/lms/landingPage_bts5av.png"
-          }
-          tools={[react, redux, ex, mongo, node, tailwind]}
-          points={[
-            "User can Login/SignUp/Logout, Authentication & Authorization",
-            "Create and edit profile, and add, update, delete addresses",
-            "view orders which are in process",
-            "add, remove products in bag and in wishlist to buy it later",
-            "Filter products through brand, price and discount",
-            "Change and reset password",
-            "Admin can Add/Update/Delete Products",
-            "Admin can view Orders and details of any order which are InProcess and Orders which are Delivered",
-            "Admin can update the status of an order from InProcess to Delivered",
-          ]}
-          alt={"My Store"}
-          liveUrl={"https://mystore-app-react.netlify.app/"}
-          gitUrl={"https://github.com/Sohel-786/myStore"}
-          responsive={false}
-        />
-
-        <ProjectCard
-          title={"Pokedex"}
-          desc={"Pokedex clone from www.pokemon.com"}
-          url={
-            "https://res.cloudinary.com/da3zef4f0/image/upload/v1709138595/lms/homePage_1_avbf7u.png"
-          }
-          tools={[react, redux, node, tailwind]}
-          points={[
-            "Debouncing effect on the search box.",
-            "Advance Search available Depend on Ability, Height, Weight, Type, Weakness and sub-string of Pokemon Name and Between pokedex-number Range.",
-            "Pokemon Details Page with all varieties, stats, evolution chain and other characteristics of selected Pokemon.",
-            "Auto-suggest of Pokemons on the Pokedex page and a pagination like functionality",
-          ]}
-          alt={"pokedex"}
-          liveUrl={"https://react-project-pokedex.netlify.app"}
-          gitUrl={"https://github.com/Sohel-786/pokedex"}
-          responsive={false}
-        />
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10"
+        >
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </motion.div>
       </div>
     </section>
   );
