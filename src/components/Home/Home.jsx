@@ -71,10 +71,7 @@ function Home() {
         >
           <Typewriter
             options={{
-              strings: [
-                "A Full Stack Web Developer",
-                "A MERN Stack Developer",
-              ],
+              strings: ["A Full Stack Web Developer", "A MERN Stack Developer"],
               autoStart: true,
               loop: true,
               delay: 80,
@@ -133,7 +130,7 @@ function Home() {
         animate="visible"
       >
         <motion.div
-          className="w-[400px] h-[400px] lg:max-w-[500px] lg:max-h-[500px] lg:w-[500px] lg:h-[500px] rounded-3xl bg-cover overflow-hidden"
+          className="w-[400px] h-[400px] lg:max-w-[500px] lg:max-h-[500px] lg:w-[400px] lg:h-[400px] rounded-3xl bg-cover overflow-hidden"
           style={{
             boxShadow: "var(--shadow-lg)",
           }}
