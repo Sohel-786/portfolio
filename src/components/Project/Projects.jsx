@@ -17,13 +17,21 @@ const projects = [
   {
     id: 1,
     title: "Rapid Personal Loans",
-    description: "Mobile-first personal loan platform with seamless application experience",
+    description:
+      "Mobile-first personal loan platform with seamless application experience",
     longDescription:
       "RapidPersonalLoans.com is a mobile-first personal loan site providing a seamless application experience. It features a user-friendly landing page, optimized web form, fast load times, and smooth navigation. The platform includes infinite scroll with lazy loading for better content access and high performance. A multi-step form guides users with real-time validation and autofill. The form is customizable using JSON configurations. By focusing on responsive design and SEO, RapidPersonalLoans.com delivers an engaging experience for personal loan seekers.",
     image: "/assets/project/rapid_personal_loan.png",
     liveUrl: "https://rapidpersonalloans.com/en",
     gitUrl: null,
-    techStack: ["nextjs2", "typescript", "javascript", "html5", "css3", "tailwindcss"],
+    techStack: [
+      "nextjs2",
+      "typescript",
+      "javascript",
+      "html5",
+      "css3",
+      "tailwindcss",
+    ],
     features: [
       "Mobile-first responsive design",
       "Multi-step form with real-time validation",
@@ -41,9 +49,16 @@ const projects = [
     longDescription:
       "Fenix Digitech is a modern IT solutions company delivering reliable web, mobile, and digital products designed to scale with your business goals. This is a portfolio website showcasing their services, solutions, and work process. The site features a clean, professional design with smooth animations and clear call-to-actions. Currently, only the desktop version is prepared, demonstrating modern web development practices and design principles.",
     image: "/assets/project/fenix_digitech.png",
-    liveUrl: "https://fenixdigitech.vercel.app/",
+    liveUrl: "https://fenix-website-ten.vercel.app/",
     gitUrl: null,
-    techStack: ["nextjs2", "typescript", "javascript", "html5", "css3", "tailwindcss"],
+    techStack: [
+      "nextjs2",
+      "typescript",
+      "javascript",
+      "html5",
+      "css3",
+      "tailwindcss",
+    ],
     features: [
       "Modern portfolio design",
       "Service showcase",
@@ -63,7 +78,14 @@ const projects = [
       "https://github.com/Sohel-786/LMS/raw/main/client/public/githubReadme/homepage.png",
     liveUrl: "https://classroom-react.netlify.app",
     gitUrl: "https://github.com/Sohel-786/LMS",
-    techStack: ["reactjs", "redux", "express", "mongodb", "nodejs", "tailwindcss"],
+    techStack: [
+      "reactjs",
+      "redux",
+      "express",
+      "mongodb",
+      "nodejs",
+      "tailwindcss",
+    ],
     features: [
       "SignUp and Login with JWT Authentication and Authorization",
       "User profile management (Picture, Name, Password reset)",
@@ -85,7 +107,14 @@ const projects = [
       "https://res.cloudinary.com/da3zef4f0/image/upload/v1709138596/lms/landingPage_bts5av.png",
     liveUrl: "https://mystore-app-react.netlify.app/",
     gitUrl: "https://github.com/Sohel-786/myStore",
-    techStack: ["reactjs", "redux", "express", "mongodb", "nodejs", "tailwindcss"],
+    techStack: [
+      "reactjs",
+      "redux",
+      "express",
+      "mongodb",
+      "nodejs",
+      "tailwindcss",
+    ],
     features: [
       "User Login/SignUp/Logout with Authentication & Authorization",
       "Profile management and address management",
@@ -149,15 +178,16 @@ function Projects() {
           <div
             className="w-24 h-1 mx-auto rounded-full"
             style={{
-              background: "linear-gradient(90deg, var(--gradient-start), var(--gradient-end))",
+              background:
+                "linear-gradient(90deg, var(--gradient-start), var(--gradient-end))",
             }}
           />
           <p
             className="mt-6 text-lg max-w-2xl mx-auto"
             style={{ color: "var(--clr-mode-text-muted)" }}
           >
-            A collection of projects I've built, showcasing my skills in full-stack
-            development, UI/UX design, and modern web technologies.
+            A collection of projects I've built, showcasing my skills in
+            full-stack development, UI/UX design, and modern web technologies.
           </p>
         </motion.div>
 
