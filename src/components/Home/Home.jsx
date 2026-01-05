@@ -138,7 +138,7 @@ function Home() {
           transition={{ duration: 0.3 }}
         >
           <img
-            className="w-full h-full object-cover"
+            className="w-full h-full"
             src="/assets/mine.png"
             alt="Sohel Shaikh"
             loading="eager"
