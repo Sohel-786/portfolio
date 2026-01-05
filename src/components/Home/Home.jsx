@@ -43,7 +43,7 @@ function Home() {
   return (
     <section
       id="home"
-      className="md:flex-row flex flex-col mt-20 lg:mt-0 gap-5 lg:gap-0 justify-center items-center md:h-[550px] lg:h-[600px] px-5 lg:px-24"
+      className="md:flex-row flex flex-col mt-20 lg:mt-0 gap-5 lg:gap-6 justify-center items-center md:h-[550px] lg:h-[600px] px-5 lg:px-24"
       style={{
         backgroundColor: "var(--bg-clr)",
         minHeight: "100vh",
