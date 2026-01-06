@@ -40,9 +40,7 @@ function Header() {
       id="top"
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
-        backgroundColor: scrolled
-          ? "var(--bg-clr)"
-          : "transparent",
+        backgroundColor: scrolled ? "var(--bg-clr)" : "transparent",
         backdropFilter: scrolled ? "blur(10px)" : "none",
         boxShadow: scrolled ? "var(--shadow)" : "none",
       }}
@@ -86,7 +84,7 @@ function Header() {
             </motion.a>
           ))}
           <motion.a
-            href="https://drive.google.com/file/d/1-g9S_yxVmHSTlJOS6xnokXN3OqsSZx_A/view?usp=sharing"
+            href="https://drive.google.com/file/d/1MvTrLs1xlqeo8UVAGQUytWETZNXpUctm/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"
@@ -94,7 +92,11 @@ function Header() {
               color: "var(--clr-mode)",
               border: `2px solid var(--clr-mode)`,
             }}
-            whileHover={{ scale: 1.05, backgroundColor: "var(--clr-mode)", color: "white" }}
+            whileHover={{
+              scale: 1.05,
+              backgroundColor: "var(--clr-mode)",
+              color: "white",
+            }}
             whileTap={{ scale: 0.95 }}
           >
             Resume
@@ -163,7 +165,7 @@ function Header() {
                 </motion.a>
               ))}
               <motion.a
-                href="https://drive.google.com/file/d/1-g9S_yxVmHSTlJOS6xnokXN3OqsSZx_A/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MvTrLs1xlqeo8UVAGQUytWETZNXpUctm/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 onClick={handleNavClick}
