@@ -62,7 +62,6 @@ const projects = [
     features: [
       "Modern portfolio design",
       "Service showcase",
-      "Smooth animations",
       "Professional UI/UX",
       "Desktop-first approach",
     ],
