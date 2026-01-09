@@ -50,7 +50,7 @@ const skillCategories = [
     id: "tools",
     title: "Tools & Others",
     skills: [
-      { name: "Git", icon: "github" },
+      { name: "Git", icon: "git-icon" },
       { name: "GitHub", icon: "github" },
       { name: "Docker", icon: "docker" },
     ],
@@ -86,7 +86,8 @@ function Skills() {
           <div
             className="w-24 h-1 mx-auto rounded-full"
             style={{
-              background: "linear-gradient(90deg, var(--gradient-start), var(--gradient-end))",
+              background:
+                "linear-gradient(90deg, var(--gradient-start), var(--gradient-end))",
             }}
           />
           <p
