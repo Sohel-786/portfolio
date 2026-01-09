@@ -72,12 +72,12 @@ function Contact() {
         backgroundColor: "var(--bg-clr-alt)",
       }}
     >
-      <div className="max-width mx-auto">
+      <div className="mx-auto">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">

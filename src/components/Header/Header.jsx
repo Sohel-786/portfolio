@@ -27,6 +27,27 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock/unlock scroll when menu is open/closed
+  useEffect(() => {
+    if (nav) {
+      // Lock scroll
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+    } else {
+      // Unlock scroll
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+    }
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+    };
+  }, [nav]);
+
   function handleNav() {
     setNav(!nav);
   }
@@ -133,9 +154,15 @@ function Header() {
       <AnimatePresence>
         {nav && (
           <motion.div
-            className="lg:hidden fixed inset-0 z-40"
+            className="lg:hidden fixed z-[9999]"
             style={{
               backgroundColor: "var(--bg-clr)",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              width: "100vw",
+              height: "100vh",
             }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

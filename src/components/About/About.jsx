@@ -54,7 +54,8 @@ function About() {
             <div
               className="w-24 h-1 mx-auto rounded-full"
               style={{
-                background: "linear-gradient(90deg, var(--gradient-start), var(--gradient-end))",
+                background:
+                  "linear-gradient(90deg, var(--gradient-start), var(--gradient-end))",
               }}
             />
           </motion.div>
@@ -65,28 +66,38 @@ function About() {
             style={{ color: "var(--clr-mode-text-muted)" }}
           >
             <p>
-              I'm a <strong style={{ color: "var(--clr-mode-text)" }}>Full Stack Developer</strong>{" "}
+              I'm a{" "}
+              <strong style={{ color: "var(--clr-mode-text)" }}>
+                Full Stack Developer
+              </strong>{" "}
               with a passion for building scalable web applications and digital
-              experiences. Currently working as a <strong style={{ color: "var(--clr-mode-text)" }}>MERN Stack Developer</strong> at{" "}
-              <strong style={{ color: "var(--clr-mode-text)" }}>Fenix Digitech</strong>, where I
-              develop and maintain full-stack applications using modern
-              technologies.
+              experiences. Currently working as a{" "}
+              <strong style={{ color: "var(--clr-mode-text)" }}>
+                MERN Stack Developer
+              </strong>{" "}
+              at{" "}
+              <strong style={{ color: "var(--clr-mode-text)" }}>
+                Fenix Digitech
+              </strong>
+              , where I develop and maintain full-stack applications using
+              modern technologies.
             </p>
 
             <p>
               My expertise spans the entire development lifecycle—from designing
-              intuitive user interfaces with React and Next.js to building robust
-              backend systems with Node.js, Express, and various databases. I
-              specialize in creating reusable components, optimizing state
-              management, and ensuring seamless integration between client and
-              server-side logic.
+              intuitive user interfaces with React and Next.js to building
+              robust backend systems with Node.js, Express, and various
+              databases. I specialize in creating reusable components,
+              optimizing state management, and ensuring seamless integration
+              between client and server-side logic.
             </p>
 
             <p>
               Beyond coding, I focus on delivering solutions that make a real
-              impact. Whether it's streamlining business processes, improving user
-              experiences, or solving complex technical challenges, I approach each
-              project with attention to detail and a commitment to quality.
+              impact. Whether it's streamlining business processes, improving
+              user experiences, or solving complex technical challenges, I
+              approach each project with attention to detail and a commitment to
+              quality.
             </p>
 
             <div className="pt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -155,4 +166,3 @@ function About() {
 }
 
 export default About;
-
